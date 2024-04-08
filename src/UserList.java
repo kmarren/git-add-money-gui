@@ -25,8 +25,11 @@ public class UserList {
     }
 
     public User getUser(String userName) {
+        if (userName == null) {
+            return null;
+        }
         for (User user : users) {
-            if (user.getUsername().equals(userName)) {
+            if (userName.equals(user.getUsername())) {
                 return user;
             }
         }
@@ -34,8 +37,11 @@ public class UserList {
     }
 
     public User getUser(String userName, String password) {
+        if (userName == null || password == null) {
+            return null;
+        }
         for (User user : users) {
-            if (user.getUsername().equals(userName) && user.getPassword().equals(password)) {
+            if (userName.equals(user.getUsername()) && password.equals(user.getPassword())) {
                 return user;
             }
         }
@@ -43,24 +49,28 @@ public class UserList {
     }
 
     public void addUser(User user) {
-        users.add(user);
-    }
-
-    public void removeUser(String string) {
-        for (User user : users) {
-            if (user.getUserID().equals(string)) {
-                users.remove(user);
-            }
+        if (user != null) {
+            users.add(user);
         }
+    }   
+
+    public void removeUser(UUID userID) {
+        if (userID == null) {
+            return;
+        }
+        users.removeIf(user -> user.getUserID().equals(userID));
     }
 
     public boolean login(String userName, String password) {
         return getUser(userName, password) != null;
     }
 
-    public User getUserId(UUID userID) {
+    public User getUserById(UUID userID) {
+        if (userID == null) {
+            return null;
+        }
         for (User user : users) {
-            if (user.getUserID().equals(userID)) {
+            if (userID.equals(user.getUserID())) {
                 return user;
             }
         }
@@ -74,7 +84,7 @@ public class UserList {
     public ArrayList<Student> getStudents() {
         ArrayList<Student> students = new ArrayList<>();
         for (User user : users) {
-            if (user.getType() == 1) {
+            if (user instanceof Student) {
                 students.add((Student) user);
             }
         }
@@ -82,14 +92,20 @@ public class UserList {
     }
 
     public void loadAll() {
-        DataLoader.finishStudents(users);
-        DataLoader.finishAdvisors(users);
-        DataLoader.finishFaculty(users);
-        System.out.println("all users loaded");
+        try {
+            DataLoader.finishStudents(users);
+            DataLoader.finishAdvisors(users);
+            DataLoader.finishFaculty(users);
+            System.out.println("All users loaded successfully");
+        } catch (Exception e) {
+            System.err.println("Failed to finish loading users: " + e.getMessage());
+        }
     }
 
     public void clear() {
-        users.clear();
+        if (!users.isEmpty()) {
+            users.clear();
+        }
     }
 
 }

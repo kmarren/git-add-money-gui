@@ -9,8 +9,12 @@ public class CourseList {
 
     private CourseList() {
         courses = new ArrayList<>();
-        ArrayList<Course> crs = DataLoader.loadCourses();
-        courses.addAll(crs);
+        try {
+            ArrayList<Course> crs = DataLoader.loadCourses();
+            courses.addAll(crs);
+        } catch (Exception e) {
+            System.err.println("Error while loading courses: " + e.getMessage());
+        }
     }
 
     public static CourseList getInstance() {
@@ -26,46 +30,85 @@ public class CourseList {
 
     public ArrayList<Course> getCourse(String courseName) {
         ArrayList<Course> foundCourses = new ArrayList<>();
-        for (Course course : courses) {
-            if (course.getCourseName().equals(courseName)) {
-                foundCourses.add(course);
+        try {
+            if (courseName != null) {
+                for (Course course : courses) {
+                    if (course.getCourseName().equals(courseName)) {
+                        foundCourses.add(course);
+                    }
+                }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while getting courses by name: " + e.getMessage());
         }
         return foundCourses;
     }
 
     public Course getCourseByUUID(UUID courseID) {
-        for (Course course : courses) {
-            if (course.getCourseID().equals(courseID.toString())) {
-                return course;
+        try {
+            if (courseID != null && courseID instanceof UUID) {
+                for (Course course : courses) {
+                    if (course.getCourseID().equals(courseID.toString())) {
+                        return course;
+                    }
+                }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while getting course by UUID: " + e.getMessage());
         }
         return null;
     }
 
     public Course getCourseByCourseName(String courseName) {
-        for (Course course : courses) {
-            if (course.getCourseName().equalsIgnoreCase(courseName)) {
-                return course;
+        try {
+            if (courseName != null) {
+                for (Course course : courses) {
+                    if (course.getCourseName().equalsIgnoreCase(courseName)) {
+                        return course;
+                    }
+                }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while getting course by name: " + e.getMessage());
         }
         return null;
     }
 
     public void addCourse(Course course) {
-        courses.add(course);
+        try {
+            if (course != null && course instanceof Course) {
+                courses.add(course);
+            }
+        } catch (NullPointerException e) {
+            System.err.println("Error while adding course: " + e.getMessage());
+        }
     }
 
     public void loadAll() {
-        DataLoader.finishCourses(courses);
+        try {
+            DataLoader.finishCourses(courses);
+        } catch (Exception e) {
+            System.err.println("Error while loading all courses: " + e.getMessage());
+        }
     }
 
     public void removeCourse(Course course) {
-        courses.remove(course);
+        try {
+            if (course != null && course instanceof Course) {
+                courses.remove(course);
+            }
+        } catch (NullPointerException e) {
+            System.err.println("Error while removing course: " + e.getMessage());
+        }
     }
 
     public void clear() {
-        courses.clear();
+        try {
+            if (!courses.isEmpty()) {
+                courses.clear();
+            }
+        } catch (Exception e) {
+            System.err.println("Error while clearing courses: " + e.getMessage());
+        }
     }
-
 }

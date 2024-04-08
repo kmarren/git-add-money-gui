@@ -299,7 +299,7 @@ public class DataLoader extends DataConstants {
                             for (Object studentObj : studentArray) {
                                 JSONObject studentJson = (JSONObject) studentObj;
                                 String studentID = (String) studentJson.get(STUDENT_ID);
-                                User studentUser = userList.getUserId(UUID.fromString(studentID));
+                                User studentUser = userList.getUserById(UUID.fromString(studentID));
 
                                 if (studentUser instanceof Student) {
                                     studentList.add((Student) studentUser);
@@ -381,7 +381,7 @@ public class DataLoader extends DataConstants {
                             JSONObject adviseeJson = (JSONObject) adviseeObj;
                             String studentID = (String) adviseeJson.get(STUDENT_ID);
                             UUID studentUUID = UUID.fromString(studentID);
-                            Student student = (Student) userList.getUserId(studentUUID);
+                            Student student = (Student) userList.getUserById(studentUUID);
                             if (student != null) {
                                 adviseeList.add(student);
                             }
@@ -432,7 +432,7 @@ public class DataLoader extends DataConstants {
                             String advisorID = (String) studentJsonObj.get(STUDENT_ADVISOR);
                             if (advisorID != null) {
                                 UUID advisorUUID = UUID.fromString(advisorID);
-                                Advisor advisor = (Advisor) userList.getUserId(advisorUUID);
+                                Advisor advisor = (Advisor) userList.getUserById(advisorUUID);
                                 if (advisor != null) {
                                     currentStudent.setAdvisor(advisor);
                                 }
@@ -620,7 +620,7 @@ public class DataLoader extends DataConstants {
                         UUID studentID = UUID.fromString(studentIDStr);
 
                         // Find the student in the user list
-                        User student = userList.getUserId(studentID);
+                        User student = userList.getUserById(studentID);
 
                         // If the student exists, set it to the appointment
                         if (student != null && student instanceof Student) {

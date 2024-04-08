@@ -3,17 +3,18 @@ package src;
 import java.util.ArrayList;
 import java.util.UUID;
 
-/**
- * @author: Jacob Robertson
- */
 public class AppointmentList {
     private static AppointmentList instance;
     private ArrayList<Appointment> appointments;
 
     private AppointmentList() {
         appointments = new ArrayList<>();
-        ArrayList<Appointment> appts = DataLoader.loadAppointments();
-        appointments.addAll(appts);
+        try {
+            ArrayList<Appointment> appts = DataLoader.loadAppointments();
+            appointments.addAll(appts);
+        } catch (Exception e) {
+            System.err.println("Error while loading appointments: " + e.getMessage());
+        }
     }
 
     public static AppointmentList getInstance() {
@@ -25,53 +26,73 @@ public class AppointmentList {
 
     // adds an appointment to the list
     public void addAppointment(Appointment appointment) {
-        if (appointment != null && appointment instanceof Appointment) {
-            appointments.add(appointment);
+        try {
+            if (appointment != null && appointment instanceof Appointment) {
+                appointments.add(appointment);
+            }
+        } catch (NullPointerException e) {
+            System.err.println("Error while adding appointment: " + e.getMessage());
         }
     }
 
     // removes an appointment by its uuid object
     public void removeAppointment(UUID uuid) {
-        if (uuid != null && uuid instanceof UUID) {
-            for (Appointment appointment : appointments) {
-                if (appointment.getAppointmentID().equals(uuid)) {
-                    appointments.remove(appointment);
+        try {
+            if (uuid != null && uuid instanceof UUID) {
+                for (Appointment appointment : appointments) {
+                    if (appointment.getAppointmentID().equals(uuid)) {
+                        appointments.remove(appointment);
+                    }
                 }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while removing appointment: " + e.getMessage());
         }
     }
 
     // removes an appointment by its string uuid
     public void removeAppointment(String uuid) {
-        if (uuid != null) {
-            for (Appointment appointment : appointments) {
-                if (appointment.getAppointmentID().equals(UUID.fromString(uuid))) {
-                    appointments.remove(appointment);
+        try {
+            if (uuid != null) {
+                for (Appointment appointment : appointments) {
+                    if (appointment.getAppointmentID().equals(UUID.fromString(uuid))) {
+                        appointments.remove(appointment);
+                    }
                 }
             }
+        } catch (IllegalArgumentException | NullPointerException e) {
+            System.err.println("Error while removing appointment: " + e.getMessage());
         }
     }
 
     // gets an appointment by its uuid object
     public Appointment getAppointment(UUID uuid) {
-        if (uuid != null && uuid instanceof UUID) {
-            for (Appointment appointment : appointments) {
-                if (appointment.getAppointmentID().equals(uuid)) {
-                    return appointment;
+        try {
+            if (uuid != null && uuid instanceof UUID) {
+                for (Appointment appointment : appointments) {
+                    if (appointment.getAppointmentID().equals(uuid)) {
+                        return appointment;
+                    }
                 }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while getting appointment: " + e.getMessage());
         }
         return null;
     }
 
     // gets an appointment by its string uuid
     public Appointment getAppointment(String uuid) {
-        if (uuid != null) {
-            for (Appointment appointment : appointments) {
-                if (appointment.getAppointmentID().equals(UUID.fromString(uuid))) {
-                    return appointment;
+        try {
+            if (uuid != null) {
+                for (Appointment appointment : appointments) {
+                    if (appointment.getAppointmentID().equals(UUID.fromString(uuid))) {
+                        return appointment;
+                    }
                 }
             }
+        } catch (IllegalArgumentException | NullPointerException e) {
+            System.err.println("Error while getting appointment: " + e.getMessage());
         }
         return null;
     }
@@ -83,11 +104,21 @@ public class AppointmentList {
 
     // final touches for the appointmentlist
     public void loadAll() {
-        DataLoader.finishAppointments(appointments);
+        try {
+            DataLoader.finishAppointments(appointments);
+        } catch (Exception e) {
+            System.err.println("Error while finishing appointments: " + e.getMessage());
+        }
     }
 
     // clears the list
     public void clear() {
-        appointments.clear();
+        try {
+            if(!appointments.isEmpty()){
+                appointments.clear();
+            }
+        } catch (Exception e) {
+            System.err.println("Error while clearing appointments: " + e.getMessage());
+        }
     }
 }

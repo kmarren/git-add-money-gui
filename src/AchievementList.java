@@ -9,9 +9,12 @@ public class AchievementList {
 
     private AchievementList() {
         achievements = new ArrayList<>();
-        ArrayList<Achievement> ach = DataLoader.loadAchievements();
-        achievements.addAll(ach);
-
+        try {
+            ArrayList<Achievement> ach = DataLoader.loadAchievements();
+            achievements.addAll(ach);
+        } catch (Exception e) {
+            System.err.println("Error while loading achievements: " + e.getMessage());
+        }
     }
 
     public static AchievementList getInstance() {
@@ -23,46 +26,69 @@ public class AchievementList {
 
     // adds an achievement to the list
     public void addAchievement(Achievement achievement) {
-        if (achievement != null && achievement instanceof Achievement) {
-            achievements.add(achievement);
+        try {
+            if (achievement != null && achievement instanceof Achievement) {
+                achievements.add(achievement);
+            }
+        } catch (NullPointerException e) {
+            System.err.println("Error while adding achievement: " + e.getMessage());
         }
     }
 
     public void removeAchievement(UUID uuid) {
-        if (uuid != null && uuid instanceof UUID) {
-            for (Achievement achievement : achievements) {
-                if (achievement.getAchievementID().equals(uuid)) {
-                    achievements.remove(achievement);
+        try {
+            if (uuid != null && uuid instanceof UUID) {
+                for (Achievement achievement : achievements) {
+                    if (achievement.getAchievementID().equals(uuid)) {
+                        achievements.remove(achievement);
+                    }
                 }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while removing achievement: " + e.getMessage());
         }
     }
 
     public void removeAchievement(String uuid) {
-        if (uuid != null) {
-            for (Achievement achievement : achievements) {
-                if (achievement.getAchievementID().equals(UUID.fromString(uuid))) {
-                    achievements.remove(achievement);
+        try {
+            if (uuid != null) {
+                for (Achievement achievement : achievements) {
+                    if (achievement.getAchievementID().equals(UUID.fromString(uuid))) {
+                        achievements.remove(achievement);
+                    }
                 }
             }
+        } catch (IllegalArgumentException | NullPointerException e) {
+            System.err.println("Error while removing achievement: " + e.getMessage());
         }
     }
 
     public Achievement getAchievement(UUID uuid) {
-        if (uuid != null && uuid instanceof UUID)
-            for (Achievement achievement : achievements) {
-                if (achievement.getAchievementID().equals(uuid)) {
-                    return achievement;
+        try {
+            if (uuid != null && uuid instanceof UUID) {
+                for (Achievement achievement : achievements) {
+                    if (achievement.getAchievementID().equals(uuid)) {
+                        return achievement;
+                    }
                 }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while getting achievement: " + e.getMessage());
+        }
         return null;
     }
 
     public Achievement getAchievement(String uuid) {
-        for (Achievement achievement : achievements) {
-            if (achievement.getAchievementID().equals(uuid)) {
-                return achievement;
+        try {
+            if (uuid != null) {
+                for (Achievement achievement : achievements) {
+                    if (achievement.getAchievementID().equals(UUID.fromString(uuid))) {
+                        return achievement;
+                    }
+                }
             }
+        } catch (IllegalArgumentException | NullPointerException e) {
+            System.err.println("Error while getting achievement: " + e.getMessage());
         }
         return null;
     }
@@ -72,6 +98,12 @@ public class AchievementList {
     }
 
     public void clear() {
-        achievements.clear();
+        try {
+            if (!achievements.isEmpty()) {
+                achievements.clear();
+            }
+        } catch (Exception e) {
+            System.err.println("Error while clearing achievements: " + e.getMessage());
+        }
     }
 }

@@ -3,21 +3,20 @@ package src;
 import java.util.ArrayList;
 import java.util.UUID;
 
-/**
- * @author jacob robertson
- */
 public class MajorList {
     private static MajorList majorList;
     private ArrayList<Major> majors;
 
-    // Private constructor to restrict instantiation from outside
     private MajorList() {
         majors = new ArrayList<>();
-        ArrayList<Major> mjr = DataLoader.loadMajors();
-        majors.addAll(mjr);
+        try {
+            ArrayList<Major> mjr = DataLoader.loadMajors();
+            majors.addAll(mjr);
+        } catch (Exception e) {
+            System.err.println("Error while loading majors: " + e.getMessage());
+        }
     }
 
-    // Method to get the instance of MajorList
     public static MajorList getInstance() {
         if (majorList == null) {
             majorList = new MajorList();
@@ -25,72 +24,93 @@ public class MajorList {
         return majorList;
     }
 
-    // returns the arraylist of majors
     public ArrayList<Major> getMajors() {
         return majors;
     }
 
-    // returns the major with the given UUID using a string
     public Major getMajorID(String majorID) {
-        if (majorID != null) {
-            for (Major major : majors) {
-                if (major.getMajorID().equals(majorID)) {
-                    return major;
+        try {
+            if (majorID != null) {
+                for (Major major : majors) {
+                    if (major.getMajorID().equals(majorID)) {
+                        return major;
+                    }
                 }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while getting major by ID: " + e.getMessage());
         }
         return null;
     }
 
-    // returns the major with the given UUID
     public Major getMajorID(UUID majorID) {
-        if (majorID != null && majorID instanceof UUID) {
-            for (Major major : majors) {
-                if (UUID.fromString(major.getMajorID()).equals(majorID)) {
-                    return major;
+        try {
+            if (majorID != null && majorID instanceof UUID) {
+                for (Major major : majors) {
+                    if (UUID.fromString(major.getMajorID()).equals(majorID)) {
+                        return major;
+                    }
                 }
             }
+        } catch (IllegalArgumentException | NullPointerException e) {
+            System.err.println("Error while getting major by ID: " + e.getMessage());
         }
         return null;
     }
 
-    // adds a major to the list
     public void addMajor(Major major) {
-        if (major instanceof Major && major != null) {
-            majors.add(major);
+        try {
+            if (major instanceof Major && major != null) {
+                majors.add(major);
+            }
+        } catch (NullPointerException e) {
+            System.err.println("Error while adding major: " + e.getMessage());
         }
     }
 
-    // removes a major from the list based on a given UUID string
     public void removeMajor(String uuid) {
-        if (uuid != null) {
-            for (Major major : majors) {
-                if (major.getMajorID().equals(uuid)) {
-                    majors.remove(major);
+        try {
+            if (uuid != null) {
+                for (Major major : majors) {
+                    if (major.getMajorID().equals(uuid)) {
+                        majors.remove(major);
+                    }
                 }
             }
+        } catch (NullPointerException e) {
+            System.err.println("Error while removing major: " + e.getMessage());
         }
     }
 
-    // removes a major based on the UUID object
     public void removeMajor(UUID uuid) {
-        if (uuid != null && uuid instanceof UUID) {
-            for (Major major : majors) {
-                if (UUID.fromString(major.getMajorID()).equals(uuid)) {
-                    majors.remove(major);
+        try {
+            if (uuid != null && uuid instanceof UUID) {
+                for (Major major : majors) {
+                    if (UUID.fromString(major.getMajorID()).equals(uuid)) {
+                        majors.remove(major);
+                    }
                 }
             }
+        } catch (IllegalArgumentException | NullPointerException e) {
+            System.err.println("Error while removing major: " + e.getMessage());
         }
     }
 
-    // finishes and loads all the majors
     public void loadAll() {
-        DataLoader.finishMajors(majors);
+        try {
+            DataLoader.finishMajors(majors);
+        } catch (Exception e) {
+            System.err.println("Error while finishing majors: " + e.getMessage());
+        }
     }
 
-    // clears the major list
     public void clear() {
-        majors.clear();
+        try {
+            if (!majors.isEmpty()) {
+                majors.clear();
+            }
+        } catch (Exception e) {
+            System.err.println("Error while clearing majors: " + e.getMessage());
+        }
     }
-
 }
