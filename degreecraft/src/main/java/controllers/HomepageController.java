@@ -14,14 +14,14 @@ public class HomepageController {
 
     private Stage stage;
 
-    // Method to set the stage
-    public void setStage(Stage stage) {
-        this.stage = stage;
+    private DegreeCraft degreeCraft;
+
+    public HomepageController() {
+        degreeCraft = DegreeCraft.getInstance();
     }
 
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) throws IOException {
-        DegreeCraft degreeCraft = DegreeCraft.getInstance();
         degreeCraft.logout();
         App app = new App();
         app.logout();
