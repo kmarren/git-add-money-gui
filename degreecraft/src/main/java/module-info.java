@@ -1,6 +1,7 @@
 module gitaddmoney {
     requires javafx.controls;
     requires javafx.fxml;
+    requires json.simple;
 
     opens gitaddmoney to javafx.fxml;
     exports gitaddmoney;
