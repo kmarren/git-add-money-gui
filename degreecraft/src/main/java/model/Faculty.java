@@ -1,4 +1,4 @@
-package src;
+package model;
 import java.util.ArrayList;
 /**
  * setting up faculty class

@@ -1,7 +1,6 @@
-package src;
+package model;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 /**
  * class to represent a student, extends attributes from the User class

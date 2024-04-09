@@ -1,6 +1,8 @@
-package gitaddmoney;
+package controllers;
 
 import java.io.IOException;
+
+import gitaddmoney.App;
 import javafx.fxml.FXML;
 
 public class PrimaryController {

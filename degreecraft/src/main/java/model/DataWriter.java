@@ -1,4 +1,4 @@
-package src;
+package model;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+
+import model.Advisor;
 
 public class DataWriter extends DataConstants {
 

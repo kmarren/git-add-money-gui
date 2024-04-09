@@ -1,7 +1,6 @@
-package src;
+package model;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 /**
  * class representing an advisor, extends the User class
@@ -60,10 +59,6 @@ public class Advisor extends User {
         super(username, password, 2);
     }
     // Getters and Setters
-
-    public Advisor(String string, String string2) {
-        //TODO Auto-generated constructor stub
-    }
 
     /**
      * Gets the location of where the advisor's office is located.

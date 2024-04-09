@@ -1,4 +1,4 @@
-package src;
+package model;
 
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -8,6 +8,8 @@ import java.util.Random;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
+import model.Advisor;
 
 /**
  * @author Jacob Robertson

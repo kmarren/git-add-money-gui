@@ -1,8 +1,7 @@
-package src;
+package model;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+
 import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +13,7 @@ import java.io.FileWriter;
  * 
  * @author Kennedy Marren
  */
-public class Application {
+public class DegreeCraft {
     private Student student;
     private Advisor advisor;
     private Faculty faculty;
@@ -23,14 +22,14 @@ public class Application {
     private CourseList courseList = CourseList.getInstance();
     private MajorList majorList = MajorList.getInstance();
     private AppointmentList appointmentList = AppointmentList.getInstance();
-    private static Application application;
+    private static DegreeCraft application;
     private Scanner keyboard = new Scanner(System.in);
 
     /**
      * private constructor that will not allow other classes to create a new
      * applicatoin
      */
-    private Application() {
+    private DegreeCraft() {
 
     }
 
@@ -40,9 +39,9 @@ public class Application {
      * 
      * @return the application
      */
-    public static Application getInstance() {
+    public static DegreeCraft getInstance() {
         if (application == null) {
-            application = new Application();
+            application = new DegreeCraft();
         }
         return application;
     }
@@ -103,7 +102,9 @@ public class Application {
             UserList.getInstance().addUser(faculty);
             user = faculty;
         } else if (accountType.equalsIgnoreCase("advisor")) {
-            Advisor advisor = new Advisor(username, password);
+            // Advisor advisor = new Advisor(username, password);
+            // FIX THIS LATER!!!!!
+            Advisor advisor = new Advisor(username, password, accountType, accountType, 0);
             UserList.getInstance().addUser(advisor);
             user = advisor;
         } else {

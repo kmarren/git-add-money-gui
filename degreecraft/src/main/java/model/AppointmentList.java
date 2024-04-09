@@ -1,4 +1,4 @@
-package src;
+package model;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -114,7 +114,7 @@ public class AppointmentList {
     // clears the list
     public void clear() {
         try {
-            if(!appointments.isEmpty()){
+            if (!appointments.isEmpty()) {
                 appointments.clear();
             }
         } catch (Exception e) {
