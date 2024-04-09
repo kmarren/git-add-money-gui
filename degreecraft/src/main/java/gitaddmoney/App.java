@@ -5,20 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import model.DegreeCraft;
 
-/**
- * JavaFX App
- */
 public class App extends Application {
 
     private static Scene scene;
+    private DegreeCraft degreeCraft;
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        degreeCraft = DegreeCraft.getInstance();
+        
+        scene = new Scene(loadFXML("login"), 640, 480);
         stage.setScene(scene);
         stage.show();
     }
@@ -35,5 +34,14 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
+    
+    // Method to handle successful login and switch to the main application UI
+    public void loginSuccessful() throws IOException {
+        setRoot("homepage"); // this should work once homepage is made
+    }
+    
+    // Method to handle logout and switch back to the login UI
+    public void logout() throws IOException {
+        setRoot("login"); 
+    }
 }
