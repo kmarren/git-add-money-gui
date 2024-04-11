@@ -2,6 +2,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
+<?import javafx.net.*?>
 
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
@@ -61,5 +62,8 @@
     
     <Label text="Degree Progression:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
     <TextField fx:id="degreeProgressionField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
-    
+    <stylesheets>
+        <URL value="@  styles.css"/>   
+
+    </stylesheets>
 </GridPane>
