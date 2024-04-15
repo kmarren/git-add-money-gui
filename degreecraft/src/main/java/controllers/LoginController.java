@@ -46,32 +46,30 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        if (degreeCraft.canLogin(username, password)) {
-            // Perform login
-            if (UserList.getInstance().getUser(username, password) instanceof Student) {
-                // go to student page
+        User loggedInUser = UserList.getInstance().getUser(username, password);
+
+        if (loggedInUser != null) {
+            if (loggedInUser instanceof Student) {
                 degreeCraft.login(username, password);
-                App app = new App();
+                App app = (App) App.getInstance(); // Assuming you have a getInstance() method in App
+                app.setCurrentUser(loggedInUser);
                 app.loginStudentSuccessful();
-            } else if (UserList.getInstance().getUser(username, password) instanceof Advisor ||
-                    UserList.getInstance().getUser(username, password) instanceof Faculty) {
-
-                // go to advisor page
+            } else if (loggedInUser instanceof Advisor || loggedInUser instanceof Faculty) {
+                // Navigate to advisor page
             }
-
         } else {
             // Display error message
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("NO LOGIN 4 U");
-            alert.setHeaderText("YOUR PASSWORD OR USERNAME WAS WRONG");
-            alert.setContentText("PASSWORD WRONG BUDDY");
+            alert.setTitle("Login Failed");
+            alert.setHeaderText("Invalid username or password");
+            alert.setContentText("Please check your credentials and try again.");
             alert.showAndWait();
         }
     }
 
     @FXML
     private void handleSignUpButtonAction(ActionEvent event) throws IOException {
-        App app = new App();
+        App app = App.getInstance();
         app.signUpInstead();
     }
 }

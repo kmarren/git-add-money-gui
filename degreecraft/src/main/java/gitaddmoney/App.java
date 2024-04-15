@@ -13,13 +13,27 @@ import model.User;
 
 public class App extends Application {
 
+    private static App instance;
     private static Scene scene;
     private DegreeCraft degreeCraft;
+    private User currentUser;
+
+    public App() {
+        
+    }
+
+    // Static method to retrieve the single instance of App
+    public static App getInstance() {
+        if (instance == null) {
+            instance = new App();
+        }
+        return instance;
+    }
 
     @Override
     public void start(Stage stage) throws IOException {
         degreeCraft = DegreeCraft.getInstance();
-        
+        degreeCraft.loadAll();
         scene = new Scene(loadFXML("login"), 640, 480);
         stage.setScene(scene);
         stage.show();
@@ -40,6 +54,7 @@ public class App extends Application {
     
     // Method to handle successful login and switch to the main application UI
     public void loginStudentSuccessful() throws IOException {
+        // currentUser = degreeCraft.getCurrentUser();
         setRoot("studenthome");
     }
 
@@ -66,7 +81,13 @@ public class App extends Application {
     }
     
     public User getCurrentUser() {
-        System.out.println(degreeCraft.getCurrentUser().toString());
-        return degreeCraft.getCurrentUser();
+        // System.out.println(degreeCraft.getCurrentUser().toString());
+        return currentUser;
+    }
+
+    public void setCurrentUser(User currentUser) {
+        if(currentUser != null){
+            this.currentUser = currentUser;
+        }
     }
 }

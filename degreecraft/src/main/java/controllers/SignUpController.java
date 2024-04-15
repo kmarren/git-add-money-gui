@@ -41,7 +41,7 @@ public class SignUpController {
         String password = passwordField.getText();
         String userType = userTypeField.getText();
         degreeCraft.signUp(username, password, userType);
-        App app = new App();
+        App app = App.getInstance();
         app.signedUp();
     }
 }

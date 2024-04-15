@@ -23,7 +23,7 @@ public class HomepageController {
     @FXML
     private void handleLogoutButtonAction(ActionEvent event) throws IOException {
         degreeCraft.logout();
-        App app = new App();
+        App app = App.getInstance();
         app.logout();
     }
 }

@@ -11,31 +11,31 @@ import model.Student;
 import model.DegreeCraft;
 
 public class StudentHomeController {
-    
+
     @FXML
     private TextField nameField;
-    
+
     @FXML
     private TextField majorField;
-    
+
     @FXML
     private TextField minorField;
-    
+
     @FXML
     private TextField gpaField;
-    
+
     @FXML
     private TextField advisorField;
-    
+
     @FXML
     private TextField emailField;
-    
+
     @FXML
     private TextField idField;
-    
+
     @FXML
     private TextField degreeProgressionField;
-    
+
     private Student student;
 
     private App app;
@@ -44,20 +44,23 @@ public class StudentHomeController {
 
     @FXML
     private Button viewSemesterPlanButton;
-    
+
     public void initialize() {
-        app = new App();
-        facade = DegreeCraft.getInstance();
+        app = App.getInstance();
         student = (Student) app.getCurrentUser();
-        
-        nameField.setText(student.getFirstName() + " " + student.getLastName());
-        majorField.setText(student.getMajor().toString());
-        minorField.setText("true");
-        gpaField.setText(String.valueOf(student.getGpa()));
-        advisorField.setText(student.getAdvisor().getFirstName() + " " + student.getAdvisor().getLastName());
-        emailField.setText(student.getEmail());
-        idField.setText(student.getUserID().toString());
-        degreeProgressionField.setText("working on it");
+
+        nameField.setText((student.getFirstName() != null ? student.getFirstName() : "cannot find") + " "
+                + (student.getLastName() != null ? student.getLastName() : "cannot find"));
+        majorField.setText((student.getMajor() != null ? student.getMajor().toString() : "cannot find"));
+        minorField.setText("they have one");
+        gpaField.setText((!Double.isNaN(student.getGpa()) ? String.valueOf(student.getGpa()) : "cannot find"));
+        advisorField.setText((student.getAdvisor() != null
+                ? student.getAdvisor().getFirstName() + " " + student.getAdvisor().getLastName()
+                : "cannot find"));
+        emailField.setText((student.getEmail() != null ? student.getEmail() : "cannot find"));
+        idField.setText((student.getUserID() != null ? student.getUserID().toString() : "cannot find"));
+        degreeProgressionField.setText("Working on it");
+
     }
 
     @FXML
