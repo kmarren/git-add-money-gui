@@ -39,9 +39,18 @@ public class App extends Application {
     public void loginSuccessful() throws IOException {
         setRoot("homepage"); // this should work once homepage is made
     }
+
+    public void signedUp() throws IOException {
+        setRoot("login"); 
+    }
     
     // Method to handle logout and switch back to the login UI
     public void logout() throws IOException {
         setRoot("login"); 
     }
+
+    public void signUpInstead() throws IOException {
+        setRoot("signup"); // this should work once homepage is made
+    }
+    
 }

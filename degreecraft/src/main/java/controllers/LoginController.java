@@ -21,6 +21,9 @@ public class LoginController {
     @FXML
     private Button loginButton;
 
+    @FXML
+    private Button signUpButton;
+
     private DegreeCraft degreeCraft;
 
     public LoginController() {
@@ -50,5 +53,11 @@ public class LoginController {
             alert.setContentText("PASSWORD WRONG BUDDY");
             alert.showAndWait();
         }
+    }
+
+    @FXML
+    private void handleSignUpButtonAction(ActionEvent event) throws IOException {
+        App app = new App();
+        app.signUpInstead();
     }
 }
