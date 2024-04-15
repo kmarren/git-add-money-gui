@@ -1,6 +1,7 @@
 package controllers;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import gitaddmoney.App;
 import javafx.event.ActionEvent;
@@ -9,7 +10,12 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import model.Advisor;
 import model.DegreeCraft;
+import model.Faculty;
+import model.Student;
+import model.User;
+import model.UserList;
 
 public class LoginController {
     @FXML
@@ -42,9 +48,17 @@ public class LoginController {
 
         if (degreeCraft.canLogin(username, password)) {
             // Perform login
-            degreeCraft.login(username, password);
-            App app = new App();
-            app.loginSuccessful();
+            if (UserList.getInstance().getUser(username, password) instanceof Student) {
+                // go to student page
+                degreeCraft.login(username, password);
+                App app = new App();
+                app.loginStudentSuccessful();
+            } else if (UserList.getInstance().getUser(username, password) instanceof Advisor ||
+                    UserList.getInstance().getUser(username, password) instanceof Faculty) {
+
+                // go to advisor page
+            }
+
         } else {
             // Display error message
             Alert alert = new Alert(Alert.AlertType.ERROR);

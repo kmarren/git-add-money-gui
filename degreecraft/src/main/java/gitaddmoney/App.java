@@ -6,7 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.UUID;
+
 import model.DegreeCraft;
+import model.User;
 
 public class App extends Application {
 
@@ -36,8 +39,17 @@ public class App extends Application {
     }
     
     // Method to handle successful login and switch to the main application UI
-    public void loginSuccessful() throws IOException {
-        setRoot("homepage"); // this should work once homepage is made
+    public void loginStudentSuccessful() throws IOException {
+        setRoot("studenthome");
+    }
+
+    public void loginAdvisorSuccessful() throws IOException {
+        // goes to advisor homepage
+    }
+
+    public void goToDegreeProgression() throws IOException {
+        setRoot("homepage");
+        // setRoot("degreeProgression");
     }
 
     public void signedUp() throws IOException {
@@ -53,4 +65,8 @@ public class App extends Application {
         setRoot("signup"); // this should work once homepage is made
     }
     
+    public User getCurrentUser() {
+        System.out.println(degreeCraft.getCurrentUser().toString());
+        return degreeCraft.getCurrentUser();
+    }
 }
