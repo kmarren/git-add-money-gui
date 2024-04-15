@@ -43,7 +43,7 @@ public class SignUpController {
         if(username != null && password != null && userType != null)
         {
             degreeCraft.signUp(username, password, userType);
-            App app = new App();
+            App app = App.getInstance();
             app.signedUp();
         }
 
