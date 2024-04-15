@@ -443,9 +443,12 @@ public class DataLoader extends DataConstants {
                             }
 
                             // Load major for the student
-                            String majorID = (String) studentJsonObj.get(STUDENT_MAJOR_ID);
+                            String majorID = (String) studentJsonObj.get("majorID");
+                            System.out.println("From json" + majorID);
                             Major major = (Major) MajorList.getInstance().getMajorID(majorID);
+                            System.out.println("majorID: " + majorID);
                             if (major != null) {
+                                System.out.println("hihihihi");
                                 currentStudent.setMajor(majorID);
                             }
 

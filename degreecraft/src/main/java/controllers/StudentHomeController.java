@@ -51,15 +51,17 @@ public class StudentHomeController {
 
         nameField.setText((student.getFirstName() != null ? student.getFirstName() : "cannot find") + " "
                 + (student.getLastName() != null ? student.getLastName() : "cannot find"));
+        //majorField.setText("Computer Science");
         majorField.setText((student.getMajor() != null ? student.getMajor().toString() : "cannot find"));
-        minorField.setText("they have one");
+        minorField.setText((student.hasMinor() ? "true" : "false"));
         gpaField.setText((!Double.isNaN(student.getGpa()) ? String.valueOf(student.getGpa()) : "cannot find"));
         advisorField.setText((student.getAdvisor() != null
-                ? student.getAdvisor().getFirstName() + " " + student.getAdvisor().getLastName()
+               ? student.getAdvisor().getFirstName() + " " + student.getAdvisor().getLastName()
                 : "cannot find"));
+        //advisorField.setText("Kevin Brown");
         emailField.setText((student.getEmail() != null ? student.getEmail() : "cannot find"));
         idField.setText((student.getUserID() != null ? student.getUserID().toString() : "cannot find"));
-        degreeProgressionField.setText("Working on it");
+        degreeProgressionField.setText(student.calculateProgressionAsPercentage());
 
     }
 

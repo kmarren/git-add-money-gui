@@ -19,7 +19,7 @@ public class App extends Application {
     private User currentUser;
 
     public App() {
-        
+        DegreeCraft.getInstance().loadAll();
     }
 
     // Static method to retrieve the single instance of App
@@ -32,8 +32,6 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        degreeCraft = DegreeCraft.getInstance();
-        degreeCraft.loadAll();
         scene = new Scene(loadFXML("login"), 640, 480);
         stage.setScene(scene);
         stage.show();

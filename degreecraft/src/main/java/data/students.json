@@ -80,7 +80,7 @@
     },
     {
         "lastName": "West",
-        "majorID": null,
+        "majorID": "112777c5-b3d2-4696-ac27-19321db183bb",
         "advisorID": null,
         "achievements": [
             {
@@ -205,8 +205,8 @@
     },
     {
         "lastName": "hill",
-        "majorID": null,
-        "advisorID": null,
+        "majorID": "112777c5-b3d2-4696-ac27-19321db183bb",
+        "advisorID": "c7dab4d5-3f76-4be8-a4c6-097d92a1cbf9",
         "achievements": [
             {
                 "achievementID": "a3e70bfa-55ab-4e3b-bc2e-98bc87654321"
