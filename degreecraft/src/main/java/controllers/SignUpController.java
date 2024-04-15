@@ -40,8 +40,20 @@ public class SignUpController {
         String username = usernameField.getText();
         String password = passwordField.getText();
         String userType = userTypeField.getText();
-        degreeCraft.signUp(username, password, userType);
-        App app = App.getInstance();
-        app.signedUp();
+        if(username != null && password != null && userType != null)
+        {
+            degreeCraft.signUp(username, password, userType);
+            App app = new App();
+            app.signedUp();
+        }
+
+        else {
+            // Display error message
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("NO LOGIN 4 U");
+            alert.setHeaderText("MORE INFORMATION NEEDED");
+            alert.setContentText("TRY AGAIN BUDDY");
+            alert.showAndWait();
+        }
     }
 }
