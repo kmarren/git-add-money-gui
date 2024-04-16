@@ -64,7 +64,7 @@ public class DataWriter extends DataConstants {
         courseJSON.put(COURSE_NAME, course.getCourseName());
         courseJSON.put(COURSE_INSTRUCTOR, course.getInstructor());
         ArrayList<Course> prereqArrayList = course.getPrerequisites();
-        ArrayList<String> idPrereqStrings = new ArrayList<>();
+        ArrayList<String> idPrereqStrings = new ArrayList<String>();
         for (Course prereq : prereqArrayList) {
             idPrereqStrings.add(prereq.getCourseID());
         }
