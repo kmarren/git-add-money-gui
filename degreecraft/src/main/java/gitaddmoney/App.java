@@ -57,7 +57,7 @@ public class App extends Application {
     }
 
     public void loginAdvisorSuccessful() throws IOException {
-        // goes to advisor homepage
+        setRoot("advisorhome");
     }
 
     public void goToDegreeProgression() throws IOException {

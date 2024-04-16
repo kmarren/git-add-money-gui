@@ -45,17 +45,18 @@ public class LoginController {
     private void handleLoginButtonAction(ActionEvent event) throws IOException {
         String username = usernameField.getText();
         String password = passwordField.getText();
-
+        App app = App.getInstance();
         User loggedInUser = UserList.getInstance().getUser(username, password);
 
         if (loggedInUser != null) {
             if (loggedInUser instanceof Student) {
-                degreeCraft.login(username, password);
-                App app = (App) App.getInstance(); // Assuming you have a getInstance() method in App
+                degreeCraft.login(username, password); 
                 app.setCurrentUser(loggedInUser);
                 app.loginStudentSuccessful();
             } else if (loggedInUser instanceof Advisor || loggedInUser instanceof Faculty) {
-                // Navigate to advisor page
+                degreeCraft.login(username, password);
+                app.setCurrentUser(loggedInUser);
+                app.loginAdvisorSuccessful();
             }
         } else {
             // Display error message
