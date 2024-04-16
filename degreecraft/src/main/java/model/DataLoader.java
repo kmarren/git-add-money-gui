@@ -140,9 +140,6 @@ public class DataLoader extends DataConstants {
                 // Parsing instructor information
                 Faculty instructor = null; // also need to add an instructor later
                 ArrayList<Course> prerequisites = new ArrayList<>();
-                    for (Course prereq : prerequisites) {
-                        prerequisites.add(prereq);
-                    }
                 String description = (String) courseObj.get(COURSE_DESCRIPTION);
                 int totalSeats = Integer.parseInt(courseObj.get(COURSE_TOTAL_SEATS).toString());
                 int creditWorth = Integer.parseInt(courseObj.get(COURSE_CREDIT_WORTH).toString());
