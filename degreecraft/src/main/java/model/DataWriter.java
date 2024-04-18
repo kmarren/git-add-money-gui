@@ -42,7 +42,7 @@ public class DataWriter extends DataConstants {
             courseJSON.add(getCourseJSON(course));
         }
 
-        try (FileWriter file = new FileWriter("degreecraft/src/main/java/data/coursestest.json")) {
+        try (FileWriter file = new FileWriter("data/coursestest.json")) {
 
             file.write(courseJSON.toJSONString());
             file.flush();
@@ -406,4 +406,5 @@ public class DataWriter extends DataConstants {
         achJSON.put(ACHIEVEMENT_ID, ach.getAchievementID().toString());
         return achJSON;
     }
+    
 }
