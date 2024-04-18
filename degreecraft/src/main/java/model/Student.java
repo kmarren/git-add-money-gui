@@ -362,43 +362,6 @@ public class Student extends User {
     }
 
     /*
-     * semester getters
-     */
-    public ArrayList<Course> getFirstSemester()
-    {
-        return this.firstSemester;
-    }
-
-    public ArrayList<Course> getSecondSemester()
-    {
-        return this.secondSemester;
-    }
-    public ArrayList<Course> getThirdSemester()
-    {
-        return this.thirdSemester;
-    }
-    public ArrayList<Course> getFourthSemester()
-    {
-        return this.fourthSemester;
-    }
-    public ArrayList<Course> getFifthSemester()
-    {
-        return this.fifthSemester;
-    }
-    public ArrayList<Course> getSixthSemester()
-    {
-        return this.sixthSemester;
-    }
-    public ArrayList<Course> getSeventhSemester()
-    {
-        return this.seventhSemester;
-    }
-    public ArrayList<Course> getEighthSemester()
-    {
-        return this.eighthSemester;
-    }
-
-    /*
      * semester setters
      */
 
@@ -916,5 +879,74 @@ public class Student extends User {
         else
             return 8;
     }
+     /*
+     * semester getters
+     */
+    public ArrayList<Course> getFirstSemester()
+    {
+        for(int i=0; i<5; i++)
+        {
+            firstSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return firstSemester;
+    }
+
+    public ArrayList<Course> getSecondSemester()
+    {
+        for(int i=5; i<11; i++)
+        {
+            secondSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return secondSemester;
+    }
+    public ArrayList<Course> getThirdSemester()
+    {
+        for(int i=11; i<16; i++)
+        {
+            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return thirdSemester;
+    }
+    public ArrayList<Course> getFourthSemester()
+    {
+        for(int i=16; i<21; i++)
+        {
+            fourthSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return fourthSemester;
+    }
+    public ArrayList<Course> getFifthSemester()
+    {
+        for(int i=21; i<26; i++)
+        {
+            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return fifthSemester;
+    }
+    public ArrayList<Course> getSixthSemester()
+    {
+        for(int i=26; i<31; i++)
+        {
+            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return sixthSemester;
+    }
+    public ArrayList<Course> getSeventhSemester()
+    {
+        for(int i=31; i<36; i++)
+        {
+            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return seventhSemester;
+    }
+    public ArrayList<Course> getEighthSemester()
+    {
+        for(int i=11; i<getMajor().getRequiredCourses().size(); i++)
+        {
+            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+        }
+        return eighthSemester;
+    }
+
 
 }
