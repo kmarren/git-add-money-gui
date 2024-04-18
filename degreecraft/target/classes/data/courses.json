@@ -2272,5 +2272,156 @@
     "grade": 0,
     "completed": false,
     "enrolled": false
+  },
+  {
+    "courseID": "bb334d27-0520-454e-afbf-6211fbb73090",
+    "courseComments": [
+      "Cool class about marketing!"
+    ],
+    "courseNumber": 350,
+    "courseCode": "MKTG",
+    "courseName": "MKTG350",
+    "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
+    "prerequisites": [
+      null
+    ],
+    "description": "A class that goes over things to do with marketing.",
+    "totalSeats": 90,
+    "creditWorth": 3,
+    "corequisites": [
+      null
+    ],
+    "applicationArea": true,
+    "carolinaCore": true,
+    "elective": false,
+    "grade": 0,
+    "completed": false,
+    "enrolled": false
+  },
+  {
+    "courseID": "f6f004f2-9323-4ee7-82d6-7b6438777855",
+    "courseComments": [
+      "Cool class about information technology!"
+    ],
+    "courseNumber": 101,
+    "courseCode": "ITEC",
+    "courseName": "ITEC101",
+    "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
+    "prerequisites": [
+      null
+    ],
+    "description": "A class that goes over things to do with information tech.",
+    "totalSeats": 71,
+    "creditWorth": 3,
+    "corequisites": [
+      null
+    ],
+    "applicationArea": true,
+    "carolinaCore": true,
+    "elective": false,
+    "grade": 0,
+    "completed": false,
+    "enrolled": false
+  },
+  {
+    "courseID": "1d5010b8-3544-49db-a9b9-aa4395a79a44",
+    "courseComments": [
+      "Cool class about artistic things!"
+    ],
+    "courseNumber": 390,
+    "courseCode": "Art",
+    "courseName": "ARTE390",
+    "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
+    "prerequisites": [
+      null
+    ],
+    "description": "A class that goes over things to do with art.",
+    "totalSeats": 600,
+    "creditWorth": 3,
+    "corequisites": [
+      null
+    ],
+    "applicationArea": true,
+    "carolinaCore": true,
+    "elective": true,
+    "grade": 0,
+    "completed": false,
+    "enrolled": false
+  },
+  {
+    "courseID": "913acdbd-62b7-4aca-ae81-f212b575b032",
+    "courseComments": [
+      "Cool class about artistic things!"
+    ],
+    "courseNumber": 563,
+    "courseCode": "Art",
+    "courseName": "ARTE563",
+    "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
+    "prerequisites": [
+      null
+    ],
+    "description": "A class that goes over things to do with art.",
+    "totalSeats": 600,
+    "creditWorth": 4,
+    "corequisites": [
+      null
+    ],
+    "applicationArea": true,
+    "carolinaCore": true,
+    "elective": true,
+    "grade": 0,
+    "completed": false,
+    "enrolled": false
+  },
+  {
+    "courseID": "0e94bc82-f799-4f76-9c7a-8268cab7b208",
+    "courseComments": [
+      "Cool class about anthropolie!"
+    ],
+    "courseNumber": 210,
+    "courseCode": "GFL",
+    "courseName": "ANTH210",
+    "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
+    "prerequisites": [
+      null
+    ],
+    "description": "A class that is about the foundations of anthropolgie.",
+    "totalSeats": 19,
+    "creditWorth": 3,
+    "corequisites": [
+      null
+    ],
+    "applicationArea": false,
+    "carolinaCore": true,
+    "elective": false,
+    "grade": 0,
+    "completed": false,
+    "enrolled": false
+  },
+  {
+    "courseID": "efba0d56-5b9d-4660-9e6f-bddbcf04a20c",
+    "courseComments": [
+      "Cool class about anthropologie!"
+    ],
+    "courseNumber": 211,
+    "courseCode": "GFL",
+    "courseName": "ANTH211",
+    "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
+    "prerequisites": [
+      "0e94bc82-f799-4f76-9c7a-8268cab7b208"
+    ],
+    "description": "A class that is a continuation of the foundations of anthropolgie.",
+    "totalSeats": 19,
+    "creditWorth": 3,
+    "corequisites": [
+      null
+    ],
+    "applicationArea": false,
+    "carolinaCore": true,
+    "elective": false,
+    "grade": 0,
+    "completed": false,
+    "enrolled": false
   }
+
 ]

@@ -1,5 +1,6 @@
 package model;
 
+import java.util.Random;
 import java.util.ArrayList;
 
 /**
@@ -43,6 +44,8 @@ public class Student extends User {
     private int cms = 0;
     private int inf = 0;
     private int vsr = 0;
+
+    private Random rand = new Random();
 
     /**
      * Constructs a new Student object with the specified attributes.
@@ -891,11 +894,27 @@ public class Student extends User {
         return chosenCourses;
     }
     
-
-    public void generateSemesterPlan()
+    public int findCurrentSemester()
     {
-      
+        resetHoursCompleted();
+        resetHoursEnrolled();
+        int hours = getHoursCompleted() + getHoursEnrolled();
+        if(hours < 15)
+            return 1;
+        else if(hours >= 15 && hours < 30)
+            return 2;
+        else if(hours >= 30 && hours < 45)
+            return 3;
+        else if(hours >= 45 && hours < 60)
+            return 4;
+        else if(hours >= 60 && hours < 75)
+            return 5;
+        else if(hours >= 75 && hours < 90)
+            return 6;
+        else if(hours >= 90 && hours < 105)
+            return 7;
+        else
+            return 8;
     }
-
 
 }
