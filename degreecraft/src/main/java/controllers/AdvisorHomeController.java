@@ -53,6 +53,6 @@ public class AdvisorHomeController {
 
     @FXML
     private void handleViewAdviseeProfileAction(ActionEvent event) {
-        // Add logic to handle viewing advisee profile
+        // TODO: Implement this method
     }
 }

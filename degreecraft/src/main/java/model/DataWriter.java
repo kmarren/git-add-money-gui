@@ -42,7 +42,7 @@ public class DataWriter extends DataConstants {
             courseJSON.add(getCourseJSON(course));
         }
 
-        try (FileWriter file = new FileWriter("data/courses.json")) {
+        try (FileWriter file = new FileWriter("data/coursestest.json")) {
 
             file.write(courseJSON.toJSONString());
             file.flush();
