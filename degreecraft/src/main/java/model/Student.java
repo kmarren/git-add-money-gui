@@ -23,6 +23,16 @@ public class Student extends User {
     private ArrayList<Course> chosenCourses = new ArrayList<Course>();
     private ArrayList<String> enrolledCourseUUIDS = new ArrayList<String>();
     private ArrayList<String> completedCourseUUIDS = new ArrayList<String>();
+
+    private ArrayList<Course> firstSemester = new ArrayList<Course>();
+    private ArrayList<Course> secondSemester = new ArrayList<Course>();
+    private ArrayList<Course> thirdSemester = new ArrayList<Course>();
+    private ArrayList<Course> fourthSemester = new ArrayList<Course>();
+    private ArrayList<Course> fifthSemester = new ArrayList<Course>();
+    private ArrayList<Course> sixthSemester = new ArrayList<Course>();
+    private ArrayList<Course> seventhSemester = new ArrayList<Course>();
+    private ArrayList<Course> eighthSemester = new ArrayList<Course>();
+
     private int cmw = 0;
     private int arp = 0;
     private int sci = 0;
@@ -347,6 +357,81 @@ public class Student extends User {
         double gpa = 100000000;
         setGpa(gpa);
     }
+
+    /*
+     * semester getters
+     */
+    public ArrayList<Course> getFirstSemester()
+    {
+        return this.firstSemester;
+    }
+
+    public ArrayList<Course> getSecondSemester()
+    {
+        return this.secondSemester;
+    }
+    public ArrayList<Course> getThirdSemester()
+    {
+        return this.thirdSemester;
+    }
+    public ArrayList<Course> getFourthSemester()
+    {
+        return this.fourthSemester;
+    }
+    public ArrayList<Course> getFifthSemester()
+    {
+        return this.fifthSemester;
+    }
+    public ArrayList<Course> getSixthSemester()
+    {
+        return this.sixthSemester;
+    }
+    public ArrayList<Course> getSeventhSemester()
+    {
+        return this.seventhSemester;
+    }
+    public ArrayList<Course> getEighthSemester()
+    {
+        return this.eighthSemester;
+    }
+
+    /*
+     * semester setters
+     */
+
+    public void setFirstSemester(ArrayList<Course> firstSemester)
+    {
+        this.firstSemester = firstSemester;
+    }
+    public void setSecondSemester(ArrayList<Course> secondSemester)
+    {
+        this.secondSemester = secondSemester;
+    }
+    public void setThirdSemester(ArrayList<Course> thirdSemester)
+    {
+        this.thirdSemester = thirdSemester;
+    }
+    public void setFourthSemester(ArrayList<Course> fourthSemester)
+    {
+        this.fourthSemester = fourthSemester;
+    }
+    public void setFifthSemester(ArrayList<Course> fifthSemester)
+    {
+        this.fifthSemester = fifthSemester;
+    }
+    public void setSixthSemester(ArrayList<Course> sixthSemester)
+    {
+        this.sixthSemester = sixthSemester;
+    }
+    public void setSeventhSemester(ArrayList<Course> seventhSemester)
+    {
+        this.seventhSemester = seventhSemester;
+    }
+    public void setEightSemester(ArrayList<Course> eighthSemester)
+    {
+        this.eighthSemester = eighthSemester;
+    }
+
 
     public void addStudentComment(String comment) {
         for (int i = 0; i < studentComments.size(); i++) {
@@ -805,5 +890,12 @@ public class Student extends User {
     {
         return chosenCourses;
     }
+    
+
+    public void generateSemesterPlan()
+    {
+      
+    }
+
 
 }

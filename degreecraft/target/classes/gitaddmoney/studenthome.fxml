@@ -8,11 +8,8 @@
           fx:controller="controllers.StudentHomeController"
           alignment="center"
           hgap="10"
-          vgap="10"
-          stylesheets="@style.css">
-
-
-    
+          vgap="10">
+        
 
     <padding>
         <Insets top="25" right="25" bottom="25" left="25"/>
