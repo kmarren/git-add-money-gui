@@ -786,5 +786,12 @@ public class DegreeCraft {
         return info.toString();
     }
 
+    public int getCurrentSemester()
+    {
+        return student.findCurrentSemester();
+    }
+
+    
+
 
 }
