@@ -2,7 +2,7 @@
     {
         "firstName": "Alice",
         "lastName": "Johnson",
-        "password": "securePassword123",
+        "password": "password",
         "appointments": [
             {
                 "appointmentID": "76a89137-3754-418f-9638-3735b8601310"
@@ -14,12 +14,21 @@
         "office": "Office A",
         "adviseeList": [
             {
+                "studentID": "80f8d54c-fdde-4da5-bf1b-7ef241986f3b"
+            },
+            {
                 "studentID": "c902485b-418a-4e1d-97a2-b41c10c6a18a"
+            },
+            {
+                "studentID": "112777c5-b3d2-4696-ac27-19321db183bb"
+            },
+            {
+                "studentID": "9fb39a81-8c63-4f18-b9b6-9dab44e7978f"
             }
         ],
         "email": "alicejohnson@example.com",
         "schoolOfFocus": "Engineering",
-        "username": "alice123"
+        "username": "alice"
     },
     {
         "firstName": "BobDaAdvisor",
@@ -37,6 +46,15 @@
         "adviseeList": [
             {
                 "studentID": "80f8d54c-fdde-4da5-bf1b-7ef241986f3b"
+            },
+            {
+                "studentID": "c902485b-418a-4e1d-97a2-b41c10c6a18a"
+            },
+            {
+                "studentID": "112777c5-b3d2-4696-ac27-19321db183bb"
+            },
+            {
+                "studentID": "9fb39a81-8c63-4f18-b9b6-9dab44e7978f"
             }
         ],
         "email": "bobsmith@example.com",
