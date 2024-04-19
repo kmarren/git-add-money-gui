@@ -35,4 +35,7 @@
       <RowConstraints />
       <RowConstraints />
    </rowConstraints>
+    <stylesheets>
+        <URL value="styles.css" />
+    </stylesheets>
 </GridPane>
