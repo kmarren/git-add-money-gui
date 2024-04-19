@@ -53,6 +53,11 @@ public class DegreeCraft {
         courseList.loadAll();
     }
 
+    public void setStudent(Student student)
+    {
+        this.student = student;
+    }
+
     /**
      * takes in the a username and password and returns the user that is trying to
      * login
@@ -142,104 +147,6 @@ public class DegreeCraft {
 
     public ArrayList<Course> listFutureCourses(Student aStudent) {
         return aStudent.getFutureCourses();
-    }
-
-    public void printGreeting() {
-        System.out.println("Welcome to DegreeCraft");
-    }
-
-    public void showStudentMenu() {
-        System.out.println("\nStudent Menu:");
-        System.out.println("1. View Completed Courses");
-        System.out.println("2. View Future Courses");
-        System.out.println("3. View Unsatisfied Carolina Core Requirements");
-        System.out.println("4. View Profile");
-        System.out.println("5. Select Sample Application Area");
-        System.out.println("6. Generate 8 Semester Plan");
-        System.out.println("7. Logout");
-    }
-
-    public void showAdvisorMenu() {
-        System.out.println("\nAdvisor Menu:");
-        System.out.println("1. View student courses");
-        System.out.println("2. Write Comment");
-        System.out.println("3. Search and add");
-        System.out.println("4. Logout");
-    }
-
-    public void showFacultyMenu() {
-        System.out.println("\nFaculty Menu:");
-        System.out.println("1. Add Course");
-        System.out.println("2. Search");
-        System.out.println("3. Logout");
-    }
-
-    public void executeStudentChoice(int choice) throws IOException {
-        student.resetChosenCourses();
-        switch (choice) {
-            case 1:
-                System.out.println(viewSpecificStudentInfo());
-                break;
-            case 2:
-                System.out.println(viewStudentFutureCourses());
-                break;
-            case 3:
-                System.out.println(viewNeededCC());
-                System.out.println("More Information: ");
-                System.out.println(searchForCCCourses(keyboard.nextLine()));
-                System.out.println("Add Course to Plan: ");
-                addCourseToFuture(findCourse(keyboard.nextLine()));
-                break;
-            case 4:
-                System.out.println(viewStudentProfile());
-                break;
-            case 5:
-                System.out.println(viewApplicationAreas());
-                executeApplicationArea(keyboard.nextInt());
-                System.out.println("Add Course to Plan: ");
-                student.chooseCourse(student.findCourse(keyboard.nextLine()));
-                break;
-            case 6:
-                printEightSemesterPlan();
-            case 7:
-                logout();
-                break;
-            default:
-                System.out.println("Invalid");
-                break;
-        }
-    }
-
-    public void executeAdvisorChoice(int choice) {
-        switch (choice) {
-            case 1:
-                System.out.println("Username of student: ");
-                User student = advisor.searchByUserName(keyboard.nextLine());
-                System.out.println(viewSpecificStudentInfo((Student) student));
-                break;
-            case 2:
-                System.out.println("Username of student to comment on: ");
-                User studentToComment = UserList.getInstance().getUser(keyboard.nextLine().trim());
-                System.out.println("Comment contents: ");
-                String comment = keyboard.nextLine();
-                writeStudentComment((Student) studentToComment, comment);
-                System.out.println("Comment successfully sent");
-                System.out.println(studentToComment.getUsername() + " commments: "
-                        + ((Student) studentToComment).getStudentComments().toString());
-                break;
-            case 3:
-                System.out.println("Username of student: ");
-                System.out.println(searchForStudentByUsername(keyboard.nextLine()));
-                System.out.println("Succesfully added as advisee");
-                System.out.println("Your advisee list: " + advisor.getAdviseeList().toString());
-                break;
-            case 4:
-                logout();
-                break;
-            default:
-                System.out.println("Invalid");
-                break;
-        }
     }
 
     public int getUserType() {
@@ -655,142 +562,16 @@ public class DegreeCraft {
         student.chooseCourse(course);
     }
 
-    public void printEightSemesterPlan() throws IOException
-    {
-        try{
-            File plan = new File("EightSemesterPlan.txt"); 
-            FileWriter fileWriter = new FileWriter("EightSemesterPlan.txt");
-            fileWriter.write("Eight Semester Plan \n");
-            fileWriter.write("Semester 1 \n");
-            fileWriter.write(getSemester1() + "\n");
-            fileWriter.write("Semester 2 \n");
-            fileWriter.write(getSemester2() + "\n");
-            fileWriter.write("Semester 3 \n");
-            fileWriter.write(getSemester3() + "\n");
-            fileWriter.write("Semester 4 \n");
-            fileWriter.write(getSemester4() + "\n");
-            fileWriter.write("Semester 5 \n");
-            fileWriter.write(getSemester5() + "\n");
-            fileWriter.write("Semester 6 *** Your Current Semester *** \n");
-            fileWriter.write(getSemester6() + "\n");
-            fileWriter.write("Semester 7 \n");
-            fileWriter.write(getSemester7() + "\n");
-            fileWriter.write("Semester 8 \n");
-            fileWriter.write(getSemester8() + "\n");
-            fileWriter.close();
-        }
-        catch(IOException e)
-        {
-            e.printStackTrace();
-        }
-        
-    }
-
-    public String getSemester1()
-    {
-        ArrayList<Course> semester1 = new ArrayList<Course>();
-        for(int i=0; i<5; i++)
-            semester1.add(student.getCompletedCourses().get(i));
-
-        StringBuilder info = new StringBuilder();
-        for (Course course : semester1) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
-    public String getSemester2()
-    {
-        ArrayList<Course> semester2 = new ArrayList<Course>();
-        for(int i=5; i<11; i++)
-            semester2.add(student.getCompletedCourses().get(i));
-
-        StringBuilder info = new StringBuilder();
-        for (Course course : semester2) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
-    public String getSemester3()
-    {
-        ArrayList<Course> semester3 = new ArrayList<Course>();
-        for(int i=11; i<17; i++)
-            semester3.add(student.getCompletedCourses().get(i));
-        StringBuilder info = new StringBuilder();
-        for (Course course : semester3) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
-    public String getSemester4()
-    {
-        ArrayList<Course> semester4 = new ArrayList<Course>();
-        for(int i=17; i<22; i++)
-            semester4.add(student.getCompletedCourses().get(i));
-        StringBuilder info = new StringBuilder();
-        for (Course course : semester4) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
-    public String getSemester5()
-    {
-        ArrayList<Course> semester5 = new ArrayList<Course>();
-        for(int i=22; i<28; i++)
-            semester5.add(student.getCompletedCourses().get(i));
-        StringBuilder info = new StringBuilder();
-        for (Course course : semester5) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
-    public String getSemester6()
-    {
-        ArrayList<Course> semester6 = new ArrayList<Course>();
-        for(Course course : student.getEnrolledCourses())
-            semester6.add(course);
-        StringBuilder info = new StringBuilder();
-        for (Course course : semester6) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
-    public String getSemester7()
-    {
-        ArrayList<Course> semester7 = new ArrayList<Course>();
-        for(Course course : student.getChosenCourses())
-            semester7.add(course);
-        for(int i=0; i<3; i++)
-            semester7.add(student.getFutureCourses().get(i));
-         StringBuilder info = new StringBuilder();
-        for (Course course : semester7) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
-    public String getSemester8()
-    {
-        ArrayList<Course> semester8 = new ArrayList<Course>();
-        for(int i=3; i<student.getFutureCourses().size(); i++)
-            semester8.add(student.getFutureCourses().get(i));
-        StringBuilder info = new StringBuilder();
-        for (Course course : semester8) {
-            info.append(course.getCourseName()).append("\n");
-        }
-        return info.toString();
-    }
-
+   
     public int getCurrentSemester()
     {
         return student.findCurrentSemester();
     }
 
+    public ArrayList<Course> eightSemesterPlanGen()
+    {
+        return student.getCourses();
+    }
     
     
 

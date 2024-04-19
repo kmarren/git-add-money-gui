@@ -947,5 +947,10 @@ public class Student extends User {
         return eighthSemester;
     }
 
+    public ArrayList<Course> getCourses()
+    {
+        return getMajor().getRequiredCourses();
+    }
+
 
 }

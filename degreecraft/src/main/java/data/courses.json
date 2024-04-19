@@ -7,7 +7,7 @@
     ],
     "courseNumber": 145,
     "courseCode": "PR",
-    "courseName": "CSCE145",
+    "courseName": "CSCE 145",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -33,7 +33,7 @@
     ],
     "courseNumber": 146,
     "courseCode": "PR",
-    "courseName": "CSCE146",
+    "courseName": "CSCE 146",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -60,7 +60,7 @@
     ],
     "courseNumber": 215,
     "courseCode": "PR",
-    "courseName": "CSCE215",
+    "courseName": "CSCE 215",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -88,7 +88,7 @@
     ],
     "courseNumber": 247,
     "courseCode": "PR",
-    "courseName": "CSCE247",
+    "courseName": "CSCE 247",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -116,7 +116,7 @@
     ],
     "courseNumber": 310,
     "courseCode": "BD",
-    "courseName": "CSCE310",
+    "courseName": "CSCE 310",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -141,7 +141,7 @@
     ],
     "courseNumber": 317,
     "courseCode": "BD",
-    "courseName": "CSCE317",
+    "courseName": "CSCE 317",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -167,7 +167,7 @@
     ],
     "courseNumber": 180,
     "courseCode": "AI",
-    "courseName": "CSCE180",
+    "courseName": "CSCE 180",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -193,7 +193,7 @@
     ],
     "courseNumber": 474,
     "courseCode": "DM",
-    "courseName": "CSCE474",
+    "courseName": "CSCE 474",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -223,7 +223,7 @@
     ],
     "courseNumber": 101,
     "courseCode": "CC-CMW",
-    "courseName": "ENGL101",
+    "courseName": "ENGL 101",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -248,7 +248,7 @@
     ],
     "courseNumber": 102,
     "courseCode": "CC-CMW",
-    "courseName": "ENGL102",
+    "courseName": "ENGL 102",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -275,7 +275,7 @@
     ],
     "courseNumber": 122,
     "courseCode": "CC-ARP",
-    "courseName": "MATH122",
+    "courseName": "MATH 122",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -300,7 +300,7 @@
     ],
     "courseNumber": 141,
     "courseCode": "CC-ARP",
-    "courseName": "MATH141",
+    "courseName": "MATH 141",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -327,7 +327,7 @@
     ],
     "courseNumber": 142,
     "courseCode": "CC-ARP",
-    "courseName": "MATH142",
+    "courseName": "MATH 142",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -354,7 +354,7 @@
     ],
     "courseNumber": 190,
     "courseCode": "CC-ARP",
-    "courseName": "CSCE190",
+    "courseName": "CSCE 190",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -379,7 +379,7 @@
     ],
     "courseNumber": 101,
     "courseCode": "CC-ARP",
-    "courseName": "CSCE101",
+    "courseName": "CSCE 101",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -404,7 +404,7 @@
     ],
     "courseNumber": 102,
     "courseCode": "CC-ARP",
-    "courseName": "CSCE102",
+    "courseName": "CSCE 102",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -429,7 +429,7 @@
     ],
     "courseNumber": 390,
     "courseCode": "CC-VSR",
-    "courseName": "CSCE390",
+    "courseName": "CSCE 390",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -455,7 +455,7 @@
     ],
     "courseNumber": 215,
     "courseCode": "PR",
-    "courseName": "CSCE215",
+    "courseName": "CSCE 215",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -482,7 +482,7 @@
     ],
     "courseNumber": 201,
     "courseCode": "PR",
-    "courseName": "CSCE201",
+    "courseName": "CSCE 201",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -509,7 +509,7 @@
     ],
     "courseNumber": 210,
     "courseCode": "PR",
-    "courseName": "CSCE210",
+    "courseName": "CSCE 210",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -536,7 +536,7 @@
     ],
     "courseNumber": 205,
     "courseCode": "MR",
-    "courseName": "CSCE205",
+    "courseName": "CSCE 205",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -563,7 +563,7 @@
     ],
     "courseNumber": 242,
     "courseCode": "MR",
-    "courseName": "CSCE242",
+    "courseName": "CSCE 242",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -590,7 +590,7 @@
     ],
     "courseNumber": 240,
     "courseCode": "PR",
-    "courseName": "CSCE240",
+    "courseName": "CSCE 240",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -617,7 +617,7 @@
     ],
     "courseNumber": 224,
     "courseCode": "PR",
-    "courseName": "ECON224",
+    "courseName": "ECON 224",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -642,7 +642,7 @@
     ],
     "courseNumber": 225,
     "courseCode": "PR",
-    "courseName": "ACT225",
+    "courseName": "ACT 225",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -667,7 +667,7 @@
     ],
     "courseNumber": 371,
     "courseCode": "PR",
-    "courseName": "MGMT371",
+    "courseName": "MGMT 371",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -692,7 +692,7 @@
     ],
     "courseNumber": 290,
     "courseCode": "PR",
-    "courseName": "MGSC290",
+    "courseName": "MGSC 290",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -718,7 +718,7 @@
     ],
     "courseNumber": 174,
     "courseCode": "PR",
-    "courseName": "MATH174",
+    "courseName": "MATH 174",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -743,7 +743,7 @@
     ],
     "courseNumber": 374,
     "courseCode": "PR",
-    "courseName": "MATH374",
+    "courseName": "MATH 374",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -773,7 +773,7 @@
     ],
     "courseNumber": 462,
     "courseCode": "PR",
-    "courseName": "ENGL462",
+    "courseName": "ENGL 462",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -803,7 +803,7 @@
     ],
     "courseNumber": 463,
     "courseCode": "PR",
-    "courseName": "ENGL463",
+    "courseName": "ENGL 463",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -833,7 +833,7 @@
     ],
     "courseNumber": 509,
     "courseCode": "PR",
-    "courseName": "STAT509",
+    "courseName": "STAT 509",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -860,7 +860,7 @@
     ],
     "courseNumber": 515,
     "courseCode": "PR",
-    "courseName": "STAT515",
+    "courseName": "STAT 515",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -887,7 +887,7 @@
     ],
     "courseNumber": 516,
     "courseCode": "PR",
-    "courseName": "STAT516",
+    "courseName": "STAT 516",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -914,7 +914,7 @@
     ],
     "courseNumber": 350,
     "courseCode": "MR",
-    "courseName": "CSCE350",
+    "courseName": "CSCE 350",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -941,7 +941,7 @@
     ],
     "courseNumber": 416,
     "courseCode": "MR",
-    "courseName": "CSCE416",
+    "courseName": "CSCE 416",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -969,7 +969,7 @@
     ],
     "courseNumber": 490,
     "courseCode": "MR",
-    "courseName": "CSCE490",
+    "courseName": "CSCE 490",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -998,7 +998,7 @@
     ],
     "courseNumber": 492,
     "courseCode": "MR",
-    "courseName": "CSCE492",
+    "courseName": "CSCE 492",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1031,7 +1031,7 @@
     ],
     "courseNumber": 520,
     "courseCode": "MR",
-    "courseName": "CSCE520",
+    "courseName": "CSCE 520",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1058,7 +1058,7 @@
     ],
     "courseNumber": 522,
     "courseCode": "MR",
-    "courseName": "CSCE522",
+    "courseName": "CSCE 522",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1088,7 +1088,7 @@
     ],
     "courseNumber": 594,
     "courseCode": "MR",
-    "courseName": "CSCE594",
+    "courseName": "CSCE 594",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -1113,7 +1113,7 @@
     ],
     "courseNumber": 447,
     "courseCode": "MR",
-    "courseName": "ITEC447",
+    "courseName": "ITEC 447",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -1138,7 +1138,7 @@
     ],
     "courseNumber": 560,
     "courseCode": "MR",
-    "courseName": "ITEC560",
+    "courseName": "ITEC 560",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1165,7 +1165,7 @@
     ],
     "courseNumber": 580,
     "courseCode": "MR",
-    "courseName": "CSCE580",
+    "courseName": "CSCE 580",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1192,7 +1192,7 @@
     ],
     "courseNumber": 555,
     "courseCode": "MR",
-    "courseName": "CSCE555",
+    "courseName": "CSCE 555",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1219,7 +1219,7 @@
     ],
     "courseNumber": 567,
     "courseCode": "MR",
-    "courseName": "CSCE567",
+    "courseName": "CSCE 567",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1246,7 +1246,7 @@
     ],
     "courseNumber": 574,
     "courseCode": "MR",
-    "courseName": "RBTS574",
+    "courseName": "RBTS 574",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1279,7 +1279,7 @@
     ],
     "courseNumber": 578,
     "courseCode": "MR",
-    "courseName": "CSCE578",
+    "courseName": "CSCE 578",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1309,7 +1309,7 @@
     ],
     "courseNumber": 582,
     "courseCode": "MR",
-    "courseName": "CSCE582",
+    "courseName": "CSCE 582",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1339,7 +1339,7 @@
     ],
     "courseNumber": 585,
     "courseCode": "MR",
-    "courseName": "CSCE585",
+    "courseName": "CSCE 585",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1366,7 +1366,7 @@
     ],
     "courseNumber": 587,
     "courseCode": "MR",
-    "courseName": "CSCE587",
+    "courseName": "CSCE 587",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1393,7 +1393,7 @@
     ],
     "courseNumber": 311,
     "courseCode": "MR",
-    "courseName": "CSCE311",
+    "courseName": "CSCE 311",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1423,7 +1423,7 @@
     ],
     "courseNumber": 548,
     "courseCode": "MR",
-    "courseName": "CSCE548",
+    "courseName": "CSCE 548",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1450,7 +1450,7 @@
     ],
     "courseNumber": 557,
     "courseCode": "MR",
-    "courseName": "CSCE557",
+    "courseName": "CSCE 557",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1480,7 +1480,7 @@
     ],
     "courseNumber": 111,
     "courseCode": "CC-SCI",
-    "courseName": "CHEM111",
+    "courseName": "CHEM 111",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -1505,7 +1505,7 @@
     ],
     "courseNumber": 111,
     "courseCode": "CC-SCI",
-    "courseName": "CHEM111L",
+    "courseName": "CHEM 111L",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -1532,7 +1532,7 @@
     ],
     "courseNumber": 112,
     "courseCode": "CC-SCI",
-    "courseName": "CHEM112",
+    "courseName": "CHEM 112",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1559,7 +1559,7 @@
     ],
     "courseNumber": 112,
     "courseCode": "CC-SCI",
-    "courseName": "CHEM112L",
+    "courseName": "CHEM 112L",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -1586,7 +1586,7 @@
     ],
     "courseNumber": 211,
     "courseCode": "CC-SCI",
-    "courseName": "PHYS211",
+    "courseName": "PHYS 211",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1613,7 +1613,7 @@
     ],
     "courseNumber": 211,
     "courseCode": "CC-SCI",
-    "courseName": "PHYS211L",
+    "courseName": "PHYS 211L",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -1640,7 +1640,7 @@
     ],
     "courseNumber": 212,
     "courseCode": "CC-SCI",
-    "courseName": "PHYS212L",
+    "courseName": "PHYS 212L",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1667,7 +1667,7 @@
     ],
     "courseNumber": 212,
     "courseCode": "CC-SCI",
-    "courseName": "PHYS212L",
+    "courseName": "PHYS 212L",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -1694,7 +1694,7 @@
     ],
     "courseNumber": 241,
     "courseCode": "PR",
-    "courseName": "MATH241",
+    "courseName": "MATH 241",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1721,7 +1721,7 @@
     ],
     "courseNumber": 201,
     "courseCode": "CC-SCI",
-    "courseName": "GEOG201",
+    "courseName": "GEOG 201",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
      null
@@ -1746,7 +1746,7 @@
     ],
     "courseNumber": 344,
     "courseCode": "PR",
-    "courseName": "MATH344",
+    "courseName": "MATH 344",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       {
@@ -1773,7 +1773,7 @@
     ],
     "courseNumber": 344,
     "courseCode": "PR",
-    "courseName": "MATH344L",
+    "courseName": "MATH 344L",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -1800,7 +1800,7 @@
     ],
     "courseNumber": 211,
     "courseCode": "PR",
-    "courseName": "CSCE211",
+    "courseName": "CSCE 211",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1827,7 +1827,7 @@
     ],
     "courseNumber": 212,
     "courseCode": "PR",
-    "courseName": "CSCE212",
+    "courseName": "CSCE 212",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1857,7 +1857,7 @@
     ],
     "courseNumber": 311,
     "courseCode": "MR",
-    "courseName": "CSCE311",
+    "courseName": "CSCE 311",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1887,7 +1887,7 @@
     ],
     "courseNumber": 330,
     "courseCode": "MR",
-    "courseName": "CSCE330",
+    "courseName": "CSCE 330",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1918,7 +1918,7 @@
     ],
     "courseNumber": 350,
     "courseCode": "MR",
-    "courseName": "CSCE350",
+    "courseName": "CSCE 350",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1945,7 +1945,7 @@
     ],
     "courseNumber": 355,
     "courseCode": "MR",
-    "courseName": "CSCE355",
+    "courseName": "CSCE 355",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -1978,7 +1978,7 @@
     ],
     "courseNumber": 416,
     "courseCode": "MR",
-    "courseName": "CSCE416",
+    "courseName": "CSCE 416",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       {
@@ -2005,7 +2005,7 @@
     ],
     "courseNumber": 121,
     "courseCode": "CC-GFL",
-    "courseName": "ASLG121",
+    "courseName": "ASLG 121",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2030,7 +2030,7 @@
     ],
     "courseNumber": 122,
     "courseCode": "CC-GFL",
-    "courseName": "ASLG122",
+    "courseName": "ASLG 122",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2055,7 +2055,7 @@
     ],
     "courseNumber": 111,
     "courseCode": "CC-GHS",
-    "courseName": "HIST111",
+    "courseName": "HIST 111",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2080,7 +2080,7 @@
     ],
     "courseNumber": 212,
     "courseCode": "CC-GSS",
-    "courseName": "ANTH212",
+    "courseName": "ANTH 212",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2105,7 +2105,7 @@
     ],
     "courseNumber": 180,
     "courseCode": "CC-AIU",
-    "courseName": "FAMS180",
+    "courseName": "FAMS 180",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2130,7 +2130,7 @@
     ],
     "courseNumber": 140,
     "courseCode": "CC-CMS",
-    "courseName": "SPCH140",
+    "courseName": "SPCH 140",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2155,7 +2155,7 @@
     ],
     "courseNumber": 213,
     "courseCode": "CC-CMS",
-    "courseName": "PHIL213",
+    "courseName": "PHIL 213",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2180,7 +2180,7 @@
     ],
     "courseNumber": 244,
     "courseCode": "MR",
-    "courseName": "DGDN244",
+    "courseName": "DGDN 244",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2205,7 +2205,7 @@
     ],
     "courseNumber": 245,
     "courseCode": "MR",
-    "courseName": "DGDN245",
+    "courseName": "DGDN 245",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2230,7 +2230,7 @@
     ],
     "courseNumber": 311,
     "courseCode": "MR",
-    "courseName": "DGDN311",
+    "courseName": "DGDN 311",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2255,7 +2255,7 @@
     ],
     "courseNumber": 109,
     "courseCode": "CC-GFL",
-    "courseName": "SPAN109",
+    "courseName": "SPAN 109",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2280,7 +2280,7 @@
     ],
     "courseNumber": 350,
     "courseCode": "MKTG",
-    "courseName": "MKTG350",
+    "courseName": "MKTG 350",
     "instructor": "dcd4a54f-f540-43e2-9442-014c79169ed0",
     "prerequisites": [
       null
@@ -2305,7 +2305,7 @@
     ],
     "courseNumber": 101,
     "courseCode": "ITEC",
-    "courseName": "ITEC101",
+    "courseName": "ITEC 101",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -2330,7 +2330,7 @@
     ],
     "courseNumber": 390,
     "courseCode": "Art",
-    "courseName": "ARTE390",
+    "courseName": "ARTE 390",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -2355,7 +2355,7 @@
     ],
     "courseNumber": 563,
     "courseCode": "Art",
-    "courseName": "ARTE563",
+    "courseName": "ARTE 563",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -2380,7 +2380,7 @@
     ],
     "courseNumber": 210,
     "courseCode": "GFL",
-    "courseName": "ANTH210",
+    "courseName": "ANTH 210",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       null
@@ -2405,7 +2405,7 @@
     ],
     "courseNumber": 211,
     "courseCode": "GFL",
-    "courseName": "ANTH211",
+    "courseName": "ANTH 211",
     "instructor": "734e3fc7-3cfd-4917-9a26-2cb037b57347",
     "prerequisites": [
       "0e94bc82-f799-4f76-9c7a-8268cab7b208"

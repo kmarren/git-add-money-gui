@@ -51,6 +51,7 @@ public class LoginController {
         if (loggedInUser != null) {
             if (loggedInUser instanceof Student) {
                 degreeCraft.login(username, password); 
+                degreeCraft.setStudent((Student)loggedInUser);
                 app.setCurrentUser(loggedInUser);
                 app.loginStudentSuccessful();
             } else if (loggedInUser instanceof Advisor || loggedInUser instanceof Faculty) {
