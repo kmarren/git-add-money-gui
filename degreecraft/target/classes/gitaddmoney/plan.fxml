@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EightSemesterController">
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EightSemesterController">
    <children>
       <AnchorPane>
          <children>
@@ -37,6 +37,7 @@
                   <TextField fx:id="semesterTwoFourField11" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
                   <TextField fx:id="semesterTwoFiveField11" prefHeight="44.0" prefWidth="574.0" promptText="Semester 4" />
                   <Button fx:id="logoutbutton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
+                  <Button mnemonicParsing="false" onAction="#backToProfileButton" text="Back to Profile" />
                </children>
             </VBox>
          </children>

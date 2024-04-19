@@ -81,4 +81,10 @@ public class EightSemesterController {
         DegreeCraft.getInstance().logout();
         App.getInstance().logout();
     }
+
+    @FXML
+    private void backToProfileButton(ActionEvent event) throws IOException{
+        App.getInstance();
+        App.setRoot("studenthome");
+    }
 }
