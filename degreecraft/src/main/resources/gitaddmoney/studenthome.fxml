@@ -1,69 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.net.*?>
 
-<GridPane xmlns="http://javafx.com/javafx"
-          xmlns:fx="http://javafx.com/fxml"
-          fx:controller="controllers.StudentHomeController"
-          alignment="center"
-          hgap="10"
-          vgap="10">
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: #8C1D40;" vgap="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentHomeController">
         
 
     <padding>
-        <Insets top="25" right="25" bottom="25" left="25"/>
+        <Insets bottom="25" left="25" right="25" top="25" />
     </padding>
 
     <columnConstraints>
-        <ColumnConstraints percentWidth="50"/>
-        <ColumnConstraints percentWidth="50"/>
+        <ColumnConstraints percentWidth="50" />
+        <ColumnConstraints percentWidth="50" />
     </columnConstraints>
 
 
     <rowConstraints>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES" />
        
     </rowConstraints>
 
  
-    <Button text="View Semester Plan" onAction="#handleViewSemesterPlanAction" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Button onAction="#handleViewSemesterPlanAction" stylesheets="@../styles.css" text="View Semester Plan" GridPane.columnIndex="0" GridPane.rowIndex="0" />
     
 
-    <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-    <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label stylesheets="@../styles.css" text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="nameField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
     
-    <Label text="College Major:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-    <TextField fx:id="majorField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label stylesheets="@../styles.css" text="College Major:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="majorField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
     
-    <Label text="Minor:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-    <TextField fx:id="minorField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label stylesheets="@../styles.css" text="Minor:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="minorField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
     
-    <Label text="GPA:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-    <TextField fx:id="gpaField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Label stylesheets="@../styles.css" text="GPA:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <TextField fx:id="gpaField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
     
-    <Label text="Advisor:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
-    <TextField fx:id="advisorField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Label stylesheets="@../styles.css" text="Advisor:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <TextField fx:id="advisorField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
     
-    <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
-    <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Label stylesheets="@../styles.css" text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <TextField fx:id="emailField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
     
-    <Label text="ID:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
-    <TextField fx:id="idField" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <Label stylesheets="@../styles.css" text="ID:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <TextField fx:id="idField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="7" />
     
-    <Label text="Degree Progression:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
-    <TextField fx:id="degreeProgressionField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+    <Label stylesheets="@../styles.css" text="Degree Progression:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+    <TextField fx:id="degreeProgressionField" stylesheets="@../styles.css" GridPane.columnIndex="1" GridPane.rowIndex="8" />
     <stylesheets>
-        <URL value="styles.css"/>
+        <URL value="styles.css" />
     </stylesheets>
 
 </GridPane>

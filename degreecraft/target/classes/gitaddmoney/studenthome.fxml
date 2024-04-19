@@ -62,5 +62,9 @@
     
     <Label text="Degree Progression:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
     <TextField fx:id="degreeProgressionField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+    <stylesheets>
+        <URL value="@style.css"/>
+    
+    </stylesheets>
 
 </GridPane>

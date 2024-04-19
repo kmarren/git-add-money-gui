@@ -1,6 +1,29 @@
-.root{
-    -fx-font-family: "Arial";
-    -fx-base: #b6e7c9;
-    -fx-background: #b6e7c9;
-
+/* Style for the GridPane background */
+.grid-pane {
+    -fx-background-color: #8C1D40; /* Soft garnet color */
 }
+
+/* Style for buttons to make them pop */
+.button {
+    -fx-background-color: #FFFFFF; /* White background to contrast with garnet */
+    -fx-text-fill: #8C1D40; /* Text color matches the GridPane background */
+    -fx-font-weight: bold; /* Make text bold */
+    -fx-padding: 10 20; /* Padding around the text */
+    -fx-border-color: #FFFFFF; /* White border */
+    -fx-border-width: 2; /* Border width */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+}
+
+/* Style for labels to enhance readability */
+.label {
+    -fx-text-fill: #FFFFFF; /* White text for contrast */
+    -fx-font-size: 14px; /* Set a suitable font size */
+}
+
+/* Style for text fields to align with the overall dark theme */
+.text-field {
+    -fx-background-color: #D1D1D1; /* Light gray background */
+    -fx-text-fill: #333333; /* Dark text for contrast */
+    -fx-padding: 5; /* Padding inside text field */
+}
+
