@@ -61,7 +61,7 @@ public class App extends Application {
     }
 
     public void goToDegreeProgression() throws IOException {
-        setRoot("homepage");
+        setRoot("plan");
         // setRoot("degreeProgression");
     }
 

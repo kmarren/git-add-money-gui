@@ -890,7 +890,6 @@ public class Student extends User {
         }
         return firstSemester;
     }
-
     public ArrayList<Course> getSecondSemester()
     {
         for(int i=5; i<11; i++)
@@ -919,7 +918,7 @@ public class Student extends User {
     {
         for(int i=21; i<26; i++)
         {
-            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+            fifthSemester.add(getMajor().getRequiredCourses().get(i));
         }
         return fifthSemester;
     }
@@ -927,7 +926,7 @@ public class Student extends User {
     {
         for(int i=26; i<31; i++)
         {
-            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+            sixthSemester.add(getMajor().getRequiredCourses().get(i));
         }
         return sixthSemester;
     }
@@ -935,7 +934,7 @@ public class Student extends User {
     {
         for(int i=31; i<36; i++)
         {
-            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+            seventhSemester.add(getMajor().getRequiredCourses().get(i));
         }
         return seventhSemester;
     }
@@ -943,7 +942,7 @@ public class Student extends User {
     {
         for(int i=11; i<getMajor().getRequiredCourses().size(); i++)
         {
-            thirdSemester.add(getMajor().getRequiredCourses().get(i));
+            eighthSemester.add(getMajor().getRequiredCourses().get(i));
         }
         return eighthSemester;
     }
