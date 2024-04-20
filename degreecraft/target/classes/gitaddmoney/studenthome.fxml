@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentHomeController">
+   <children>
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="583.0" stylesheets="@../unique.css" text="Profile" />
+      <Button layoutX="10.0" layoutY="377.0" onAction="#handleViewSemesterPlanAction" stylesheets="@../loginStyles.css" text="View Semester Plan" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="67.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Name:" />
+      <TextField fx:id="nameField" layoutX="177.0" layoutY="68.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="103.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Major:" />
+      <TextField fx:id="majorField" layoutX="177.0" layoutY="105.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="140.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Minor:" />
+      <TextField fx:id="minorField" layoutX="177.0" layoutY="141.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="284.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="GPA:" />
+      <TextField fx:id="gpaField" layoutX="177.0" layoutY="285.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="177.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Advisor:" />
+      <TextField fx:id="advisorField" layoutX="177.0" layoutY="178.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Email:" />
+      <TextField fx:id="emailField" layoutX="177.0" layoutY="215.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="249.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="ID:" />
+      <TextField fx:id="idField" layoutX="177.0" layoutY="250.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="319.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Degree Progression:" />
+      <TextField fx:id="degreeProgressionField" layoutX="177.0" layoutY="320.0" prefHeight="27.0" prefWidth="416.0" />
+   </children>
+</AnchorPane>

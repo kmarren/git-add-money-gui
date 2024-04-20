@@ -1,0 +1,25 @@
+/* Style for the GridPane background */
+.grid-pane {
+    -fx-background-color: #8C1D40; /* Soft garnet color */
+}
+
+/* Style for buttons to make them pop */
+.button {
+    -fx-background-color: #293D57; /* White background to contrast with garnet */
+    -fx-text-fill: #ffffff; /* Padding around the text */
+    -fx-border-color: #293D57; /* White border */
+    -fx-border-width: 1; /* Border width */
+    -fx-border-radius: 3; /* Rounded corners for the border */
+}
+
+/* Style for labels to enhance readability */
+.label {
+    -fx-text-fill: #FFFFFF; /* White text for contrast */
+    -fx-font-size: 14px; /* Set a suitable font size */
+}
+
+.text-field {
+    -fx-background-color: #f7f7f7;
+    -fx-text-fill: #293D57;
+}
+
