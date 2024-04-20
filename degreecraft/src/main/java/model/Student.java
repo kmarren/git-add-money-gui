@@ -199,8 +199,8 @@ public class Student extends User {
      * @return The total hours completed for the student.
      */
     public int getHoursCompleted() {
-        for (Course course : completedCourses) {
-            int curr = course.getCreditWorth();
+        for (int i=0; i<completedCourses.size(); i++) {
+            int curr = completedCourses.get(i).getCreditWorth();
             hoursCompleted += curr;
         }
         return hoursCompleted;
@@ -861,8 +861,8 @@ public class Student extends User {
     {
         resetHoursCompleted();
         resetHoursEnrolled();
-        int hours = getHoursCompleted();
-        if(hours < 15)
+        int hours = getCompletedCourses().size();
+        /*if(hours < 15)
             return 1;
         if(hours >= 15 && hours < 30)
             return 2;
@@ -880,6 +880,9 @@ public class Student extends User {
             return 8;
         else 
             return 500;
+        */
+
+        return hours;
     }
      /*
      * semester getters
