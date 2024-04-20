@@ -39,7 +39,7 @@
     },
     {
         "lastName": "Johnson",
-        "majorID":"570e08ee-787a-4e2d-bba8-6ebfe74555e6",
+        "majorID": null,
         "advisorID": null,
         "achievements": [
             {
@@ -68,7 +68,7 @@
         ],
         "studentID": "c902485b-418a-4e1d-97a2-b41c10c6a18a",
         "firstName": "Alice",
-        "password": "password",
+        "password": "securepass456",
         "riskFailing": false,
         "gpa": 3.8,
         "studentComments": [
@@ -148,6 +148,30 @@
             },
             {
                 "courseID": "eb72b489-be6b-4bce-9b69-857b01fffe79"
+            },
+            {
+                "courseID": "f183c1b2-f92f-412d-9e94-b85104f2c019"
+            },
+            {
+                "courseID": "d97b22bd-86ec-4c10-9c4b-9987b2d042f3"
+            },
+            {
+                "courseID": "09bd3e41-5773-4bd9-a86a-dd8647fe2e9e"
+            },
+            {
+                "courseID": "b78cf3bf-a6e3-4454-bf87-eb56fb13376c"
+            },
+            {
+                "courseID": "f35af6c3-cef2-407b-894b-9453e91cdd07"
+            },
+            {
+                "courseID": "234db3a4-6d5a-47e5-b999-a018d6f3241e"
+            },
+            {
+                "courseID": "341480f1-fb6d-4080-b771-e5fe760672de"
+            },
+            {
+                "courseID": "2fe90d2a-0338-44f0-a291-4c57f5013e68"
             }
         ],
         "enrolledCourses": [
@@ -156,6 +180,15 @@
             },
             {
                 "courseID": "65541aa4-b637-4d42-84f0-a9dfae30bf9d"
+            },
+            {
+                "courseID": "3688c526-736a-4085-b795-a3b15afd2d7c"
+            },
+            {
+                "courseID": "f359896e-56b9-4faa-b9bd-0a0804d8b414"
+            },
+            {
+                "courseID": "22846d1d-0aab-4431-a72e-5efcaf72d5b9"
             }
         ],
         "studentID": "112777c5-b3d2-4696-ac27-19321db183bb",
