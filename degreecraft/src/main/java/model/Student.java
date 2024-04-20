@@ -861,10 +861,10 @@ public class Student extends User {
     {
         resetHoursCompleted();
         resetHoursEnrolled();
-        int hours = getHoursCompleted() + getHoursEnrolled();
+        int hours = getHoursCompleted();
         if(hours < 15)
             return 1;
-        else if(hours >= 15 && hours < 30)
+        if(hours >= 15 && hours < 30)
             return 2;
         else if(hours >= 30 && hours < 45)
             return 3;
@@ -876,8 +876,10 @@ public class Student extends User {
             return 6;
         else if(hours >= 90 && hours < 105)
             return 7;
-        else
+        else if(hours > 105)
             return 8;
+        else 
+            return 500;
     }
      /*
      * semester getters

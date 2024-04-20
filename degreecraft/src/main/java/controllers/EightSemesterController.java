@@ -60,6 +60,9 @@ public class EightSemesterController {
     @FXML
     private Button logoutbutton;
 
+    @FXML
+    private Button next;
+
     private Student student;
 
     private App app;
@@ -113,5 +116,11 @@ public class EightSemesterController {
     private void backToProfileButton(ActionEvent event) throws IOException{
         App.getInstance();
         App.setRoot("studenthome");
+    }
+
+    @FXML
+    private void nextButton(ActionEvent event) throws IOException{
+        App.getInstance();
+        App.setRoot("plan2");
     }
 }
