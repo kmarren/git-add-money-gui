@@ -39,7 +39,7 @@
     },
     {
         "lastName": "Johnson",
-        "majorID": null,
+        "majorID":"570e08ee-787a-4e2d-bba8-6ebfe74555e6",
         "advisorID": null,
         "achievements": [
             {
@@ -68,7 +68,7 @@
         ],
         "studentID": "c902485b-418a-4e1d-97a2-b41c10c6a18a",
         "firstName": "Alice",
-        "password": "securepass456",
+        "password": "password",
         "riskFailing": false,
         "gpa": 3.8,
         "studentComments": [

@@ -36,6 +36,17 @@ public class EightSemesterController {
     private TextField semesterTwoFiveField;
 
     @FXML
+    private TextField semesterThreeOneField;
+    @FXML
+    private TextField semesterThreeTwoField;
+    @FXML
+    private TextField semesterThreeThreeField;
+    @FXML
+    private TextField semesterThreeFourField;
+    @FXML
+    private TextField semesterThreeFiveField;
+
+    @FXML
     private Button logoutbutton;
 
     private Student student;

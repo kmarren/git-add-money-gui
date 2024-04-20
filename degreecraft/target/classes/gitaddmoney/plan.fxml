@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EightSemesterController">
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EightSemesterController">
    <children>
       <AnchorPane>
          <children>
@@ -25,17 +25,17 @@
                   <TextField fx:id="semesterTwoFourField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
                   <TextField fx:id="semesterTwoFiveField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
                   <Label text="Semester Three" />
-                  <TextField fx:id="semesterTwoOneField1" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-                  <TextField fx:id="semesterTwoTwoField1" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-                  <TextField fx:id="semesterTwoThreeField1" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-                  <TextField fx:id="semesterTwoFourField1" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-                  <TextField fx:id="semesterTwoFiveField1" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+                  <TextField fx:id="semesterThreeOneField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+                  <TextField fx:id="semesterThreeTwoField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+                  <TextField fx:id="semesterThreeThreeField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+                  <TextField fx:id="semesterThreeFourField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+                  <TextField fx:id="semesterThreeFiveField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
                   <Label text="Semester Four" />
-                  <TextField fx:id="semesterTwoOneField11" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-                  <TextField fx:id="semesterTwoTwoField11" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-                  <TextField fx:id="semesterTwoThreeField11" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-                  <TextField fx:id="semesterTwoFourField11" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-                  <TextField fx:id="semesterTwoFiveField11" prefHeight="44.0" prefWidth="574.0" promptText="Semester 4" />
+                  <TextField fx:id="semesterFourOneField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+                  <TextField fx:id="semesterFourTwoField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+                  <TextField fx:id="semesterFourThreeField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+                  <TextField fx:id="semesterFourFourField" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+                  <TextField fx:id="semesterFourFiveField" prefHeight="44.0" prefWidth="574.0" promptText="Semester 4" />
                   <Button fx:id="logoutbutton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
                   <Button mnemonicParsing="false" onAction="#backToProfileButton" text="Back to Profile" />
                </children>
