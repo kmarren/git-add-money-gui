@@ -8,12 +8,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane style="-fx-background-color: #ffffff;" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="445.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <children>
       <Line endX="154.0" layoutX="237.0" layoutY="153.0" startX="-132.5" />
      
-        <Button  stylesheets="@../loginStyles.css" layoutX="174.0" layoutY="353.0" onAction="#handleLoginButtonAction" prefHeight="27.0" prefWidth="149.0" text="Login" />
-      <Button  stylesheets="@../loginStyles.css" layoutX="174.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleSignUpButtonAction" prefHeight="27.0" prefWidth="149.0" text="Sign Up" />
+        <Button layoutX="174.0" layoutY="343.0" onAction="#handleLoginButtonAction" prefHeight="27.0" prefWidth="149.0" stylesheets="@../loginStyles.css" text="Login" />
+      <Button layoutX="174.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleSignUpButtonAction" prefHeight="27.0" prefWidth="149.0" stylesheets="@../loginStyles.css" text="Sign Up" />
      <TextField fx:id="usernameField" layoutX="174.0" layoutY="263.0" prefHeight="27.0" prefWidth="149.0" promptText="Username" />
      <PasswordField fx:id="passwordField" layoutX="174.0" layoutY="296.0" prefWidth="149.0" promptText="Password" />
       <Line endX="154.0" layoutX="238.0" layoutY="430.0" startX="-133.5" startY="1.5" />
