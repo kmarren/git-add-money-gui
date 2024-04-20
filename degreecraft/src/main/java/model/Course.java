@@ -27,7 +27,7 @@ public class Course {
     private boolean enrolled;
     private boolean completed;
 
-    private double grade;
+    private int grade;
 
 
     /**
@@ -55,7 +55,7 @@ public class Course {
     public Course(ArrayList<String> courseComments, int courseNumber, String courseCode,
             String courseName, Faculty instructor, ArrayList<Course> prerequisites, String description, int totalSeats,
             int creditWorth, ArrayList<Course> corequisites, boolean applicationArea, boolean carolinaCore,
-            boolean elective, double grade, boolean enrolled, boolean completed) {
+            boolean elective, int grade, boolean enrolled, boolean completed) {
         this.courseID = UUID.randomUUID();
         this.courseComments = courseComments;
         this.courseNumber = courseNumber;
@@ -399,7 +399,7 @@ public class Course {
      * 
      * @param grade The grade a student has earned in the course.
      */
-    public void setGrade(double grade) {
+    public void setGrade(int grade) {
         this.grade = grade;
     }
 

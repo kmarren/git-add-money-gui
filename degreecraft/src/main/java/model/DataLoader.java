@@ -178,7 +178,7 @@ public class DataLoader extends DataConstants {
                         JSONObject courseJson = (JSONObject) obj;
                         if (Double.parseDouble(courseJson.get(COURSE_GRADE).toString()) != 0) {
                             Number courseGradeNumber = (Number) courseJson.get(COURSE_GRADE);
-                            Double courseGrade = courseGradeNumber.doubleValue();
+                            int courseGrade = courseGradeNumber.intValue();
                             foundCourse.setGrade(courseGrade);
                         } else {
                             double targetGrade = 85.0; // Target grade
@@ -187,8 +187,8 @@ public class DataLoader extends DataConstants {
                             double maxGrade = targetGrade + variability;
 
                             double randomGrade = minGrade + Math.random() * (maxGrade - minGrade);
-                            randomGrade = Math.round(randomGrade * 100.0) / 100.0;
-                            foundCourse.setGrade(randomGrade);
+                            int grade = (int)randomGrade;
+                            foundCourse.setGrade(grade);
                         }
                         String courseIdStr = (String) courseJson.get(COURSE_ID);
                         if (courseIdStr.equals(foundCourse.getCourseID().toString())) {
