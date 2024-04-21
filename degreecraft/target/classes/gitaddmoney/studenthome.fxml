@@ -24,5 +24,6 @@
       <TextField fx:id="idField" layoutX="177.0" layoutY="250.0" prefHeight="27.0" prefWidth="416.0" />
       <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="319.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Degree Progression:" />
       <TextField fx:id="degreeProgressionField" layoutX="177.0" layoutY="320.0" prefHeight="27.0" prefWidth="416.0" />
+      <Button layoutX="10.0" layoutY="416.0" onAction="#handleLogoutAction" prefHeight="29.0" prefWidth="128.0" stylesheets="@../loginStyles.css" text="Logout" />
    </children>
 </AnchorPane>

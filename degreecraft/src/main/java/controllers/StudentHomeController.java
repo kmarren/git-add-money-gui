@@ -73,4 +73,13 @@ public class StudentHomeController {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    private void handleLogoutAction(ActionEvent event) {
+        try {
+            app.setRoot("login");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
