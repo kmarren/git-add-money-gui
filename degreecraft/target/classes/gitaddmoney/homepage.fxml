@@ -16,7 +16,4 @@
 
     <Label text="Welcome to the Homepage!" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
     <Button text="Logout" onAction="#handleLogoutButtonAction" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-     <stylesheets>
-        <URL value="styles.css" />
-    </stylesheets>
 </GridPane>

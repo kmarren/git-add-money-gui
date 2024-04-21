@@ -4,37 +4,37 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="935.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EightSemesterController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EightSemesterController">
    <children>
-      <Button stylesheets="@../styles.css" alignment="BOTTOM_LEFT" layoutX="7.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Course" />
-      <Button alignment="BOTTOM_LEFT" layoutX="9.0" layoutY="65.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="577.0" stylesheets="@../unique.css" text="Semester One" />
-      <TextField fx:id="semesterOneOneField" layoutX="10.0" layoutY="101.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
-      <TextField fx:id="semesterOneTwoField" layoutX="10.0" layoutY="129.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
-      <TextField fx:id="semesterOneThreeField" layoutX="10.0" layoutY="157.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
-      <TextField fx:id="semesterOneFourField" layoutX="11.0" layoutY="185.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
-      <TextField fx:id="semesterOneFiveField" layoutX="12.0" layoutY="213.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
-      <Button alignment="BOTTOM_LEFT" layoutX="11.0" layoutY="249.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="574.0" stylesheets="@../unique.css" text="Semester Two" />
-      <TextField fx:id="semesterTwoOneField" layoutX="10.0" layoutY="283.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
-      <TextField fx:id="semesterTwoTwoField" layoutX="10.0" layoutY="311.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
-      <TextField fx:id="semesterTwoThreeField" layoutX="10.0" layoutY="339.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
-      <TextField fx:id="semesterTwoFourField" layoutX="10.0" layoutY="367.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
-      <TextField fx:id="semesterTwoFiveField" layoutX="10.0" layoutY="395.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
-      <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="430.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="574.0" stylesheets="@../unique.css" text="Semester Three" />
-      <TextField fx:id="semesterThreeOneField" layoutX="10.0" layoutY="465.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-      <TextField fx:id="semesterThreeTwoField" layoutX="10.0" layoutY="493.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-      <TextField fx:id="semesterThreeThreeField" layoutX="10.0" layoutY="521.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-      <TextField fx:id="semesterThreeFourField" layoutX="10.0" layoutY="549.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-      <TextField fx:id="semesterThreeFiveField" layoutX="10.0" layoutY="577.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
-      <Button alignment="BOTTOM_LEFT" layoutX="12.0" layoutY="613.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="574.0" stylesheets="@../unique.css" text="Semester Four" />
-      <TextField fx:id="semesterFourOneField" layoutX="11.0" layoutY="648.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-      <TextField fx:id="semesterFourTwoField" layoutX="12.0" layoutY="676.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-      <TextField fx:id="semesterFourThreeField" layoutX="11.0" layoutY="704.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-      <TextField fx:id="semesterFourFourField" layoutX="11.0" layoutY="732.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-      <TextField fx:id="semesterFourFiveField" layoutX="12.0" layoutY="760.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
-      <AnchorPane layoutX="8.0" layoutY="785.0" prefHeight="2.0" prefWidth="574.0" />
-      <Button layoutX="458.0" layoutY="808.0" mnemonicParsing="false" onAction="#nextButton" prefHeight="27.0" prefWidth="125.0" text="Next Page" />
-      <Button layoutX="10.0" layoutY="808.0" mnemonicParsing="false" onAction="#backToProfileButton" prefHeight="27.0" prefWidth="125.0" text="Back to Profile" />
-      <Button stylesheets="@../styles.css" alignment="BOTTOM_LEFT" layoutX="179.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Grade" />
-      <Button stylesheets="@../styles.css" alignment="BOTTOM_LEFT" layoutX="93.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" text="Code" />
+      <Button alignment="BOTTOM_LEFT" layoutX="728.0" layoutY="77.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" stylesheets="@../styles.css" text="Course" />
+      <Button alignment="BOTTOM_LEFT" layoutX="730.0" layoutY="123.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="577.0" stylesheets="@../unique.css" text="Semester One" />
+      <TextField fx:id="semesterOneOneField" layoutX="731.0" layoutY="159.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
+      <TextField fx:id="semesterOneTwoField" layoutX="731.0" layoutY="187.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
+      <TextField fx:id="semesterOneThreeField" layoutX="731.0" layoutY="215.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
+      <TextField fx:id="semesterOneFourField" layoutX="732.0" layoutY="243.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
+      <TextField fx:id="semesterOneFiveField" layoutX="733.0" layoutY="271.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 1" />
+      <Button alignment="BOTTOM_LEFT" layoutX="732.0" layoutY="307.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="574.0" stylesheets="@../unique.css" text="Semester Two" />
+      <TextField fx:id="semesterTwoOneField" layoutX="731.0" layoutY="341.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
+      <TextField fx:id="semesterTwoTwoField" layoutX="731.0" layoutY="369.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
+      <TextField fx:id="semesterTwoThreeField" layoutX="731.0" layoutY="397.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
+      <TextField fx:id="semesterTwoFourField" layoutX="731.0" layoutY="425.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
+      <TextField fx:id="semesterTwoFiveField" layoutX="731.0" layoutY="453.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 2" />
+      <Button alignment="BOTTOM_LEFT" layoutX="731.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="574.0" stylesheets="@../unique.css" text="Semester Three" />
+      <TextField fx:id="semesterThreeOneField" layoutX="731.0" layoutY="523.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+      <TextField fx:id="semesterThreeTwoField" layoutX="731.0" layoutY="551.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+      <TextField fx:id="semesterThreeThreeField" layoutX="731.0" layoutY="579.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+      <TextField fx:id="semesterThreeFourField" layoutX="731.0" layoutY="607.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+      <TextField fx:id="semesterThreeFiveField" layoutX="731.0" layoutY="635.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 3" />
+      <Button alignment="BOTTOM_LEFT" layoutX="733.0" layoutY="671.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="574.0" stylesheets="@../unique.css" text="Semester Four" />
+      <TextField fx:id="semesterFourOneField" layoutX="732.0" layoutY="706.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+      <TextField fx:id="semesterFourTwoField" layoutX="733.0" layoutY="734.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+      <TextField fx:id="semesterFourThreeField" layoutX="732.0" layoutY="762.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+      <TextField fx:id="semesterFourFourField" layoutX="732.0" layoutY="790.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+      <TextField fx:id="semesterFourFiveField" layoutX="733.0" layoutY="818.0" prefHeight="28.0" prefWidth="574.0" promptText="Semester 4" />
+      <AnchorPane layoutX="729.0" layoutY="843.0" prefHeight="2.0" prefWidth="574.0" />
+      <Button layoutX="1179.0" layoutY="866.0" mnemonicParsing="false" onAction="#nextButton" prefHeight="27.0" prefWidth="125.0" text="Next Page" />
+      <Button layoutX="731.0" layoutY="866.0" mnemonicParsing="false" onAction="#backToProfileButton" prefHeight="27.0" prefWidth="125.0" text="Back to Profile" />
+      <Button alignment="BOTTOM_LEFT" layoutX="900.0" layoutY="77.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" stylesheets="@../styles.css" text="Grade" />
+      <Button alignment="BOTTOM_LEFT" layoutX="814.0" layoutY="77.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="82.0" stylesheets="@../styles.css" text="Code" />
    </children>
 </AnchorPane>

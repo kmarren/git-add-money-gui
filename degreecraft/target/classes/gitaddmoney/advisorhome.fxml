@@ -3,27 +3,24 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdvisorHomeController">
+<AnchorPane fx:id="anchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdvisorHomeController">
    <children>
-      <AnchorPane>
-         <children>
-            <VBox layoutX="14.0" layoutY="14.0" prefHeight="346.0" prefWidth="574.0" spacing="10.0">
-               <children>
-                  <TextField fx:id="officeField" promptText="Office" />
-                  <TextField fx:id="officeHoursField" promptText="Office Hours" />
-                  <TextField fx:id="phoneNumberField" promptText="Phone Number" />
-                  <TextField fx:id="schoolOfFocusField" promptText="School of Focus" />
-                  <TextField fx:id="adviseeListField" prefHeight="200.0" prefWidth="200.0" promptText="Advisee List" />
-                  <Button fx:id="viewAdviseeProfileButton" contentDisplay="CENTER" onAction="#handleViewAdviseeProfileAction" text="View Advisee Profile" />
-                  <Button fx:id="logoutbutton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
-               </children>
-            </VBox>
-         </children>
-      </AnchorPane>
+      <Button alignment="BOTTOM_LEFT" layoutX="738.0" layoutY="369.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="583.0" stylesheets="@../unique.css" text="Profile" />
+      <Button alignment="BOTTOM_LEFT" layoutX="738.0" layoutY="407.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Office" />
+      <TextField fx:id="officeField" layoutX="905.0" layoutY="407.0" prefHeight="27.0" prefWidth="416.0" promptText="Office" />
+      
+      <Button alignment="BOTTOM_LEFT" layoutX="738.0" layoutY="445.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Office Hours" />
+      <TextField fx:id="officeHoursField" layoutX="905.0" layoutY="445.0" prefHeight="27.0" prefWidth="416.0" promptText="Office Hours" />
+      
+      <Button alignment="BOTTOM_LEFT" layoutX="738.0" layoutY="483.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Phone Number" />
+      <TextField fx:id="phoneNumberField" layoutX="905.0" layoutY="483.0" prefHeight="27.0" prefWidth="416.0" promptText="Phone Number" />
+      
+      <Button alignment="BOTTOM_LEFT" layoutX="738.0" layoutY="521.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="School of Focus" />
+      <TextField fx:id="schoolOfFocusField" layoutX="905.0" layoutY="521.0" prefHeight="27.0" prefWidth="416.0" promptText="School of Focus" />
+      
+      <Button alignment="BOTTOM_LEFT" layoutX="738.0" layoutY="559.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" stylesheets="@../styles.css" text="Advisee List" />
+      <TextField fx:id="adviseeListField" layoutX="905.0" layoutY="559.0" prefHeight="27.0" prefWidth="416.0" promptText="Advisee List" />
+      <Button fx:id="logoutbutton" alignment="BOTTOM_LEFT" layoutX="971.0" layoutY="598.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="128.0" stylesheets="@../loginStyles.css" text="Logout" onAction="#logoutButton"/>
    </children>
-    <stylesheets>
-        <URL value="styles.css" />
-    </stylesheets>
-</VBox>
+</AnchorPane>

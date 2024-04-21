@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import model.Advisor;
 import model.Student;
 import model.DegreeCraft;
@@ -58,11 +59,6 @@ public class AdvisorHomeController {
             }
             adviseeListField.setText(adviseeList.toString());
         }
-    }
-
-    @FXML
-    private void handleViewAdviseeProfileAction(ActionEvent event) {
-        // TODO: Implement this method
     }
 
     @FXML
