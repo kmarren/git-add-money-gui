@@ -487,7 +487,7 @@ public class Student extends User {
         resetHoursEnrolled();
         int hours = getHoursCompleted() + getHoursEnrolled();
         double percent = (hours * 100) / getMajor().getHoursRequired();
-        return String.valueOf(percent) + "%";
+        return String.valueOf(percent/2) + "%";
     }
 
     public String getGradeLevel() {
@@ -861,29 +861,10 @@ public class Student extends User {
     {
         resetHoursCompleted();
         resetHoursEnrolled();
-        int hours = getCompletedCourses().size();
-        /*if(hours < 15)
-            return 1;
-        if(hours >= 15 && hours < 30)
-            return 2;
-        else if(hours >= 30 && hours < 45)
-            return 3;
-        else if(hours >= 45 && hours < 60)
-            return 4;
-        else if(hours >= 60 && hours < 75)
-            return 5;
-        else if(hours >= 75 && hours < 90)
-            return 6;
-        else if(hours >= 90 && hours < 105)
-            return 7;
-        else if(hours > 105)
-            return 8;
-        else 
-            return 500;
-        */
-
+        int hours = (getEnrolledCourses().size() + getCompletedCourses().size()) / 10;
         return hours;
     }
+
      /*
      * semester getters
      */

@@ -61,7 +61,7 @@ public class StudentHomeController {
         //advisorField.setText("Kevin Brown");
         emailField.setText((student.getEmail() != null ? student.getEmail() : "cannot find"));
         idField.setText((student.getUserID() != null ? student.getUserID().toString() : "cannot find"));
-        degreeProgressionField.setText((student.getMajor() != null ? student.findCurrentSemester()+" " : "no progression"));
+        degreeProgressionField.setText((student.getMajor() != null ? student.calculateProgressionAsPercentage()+" " : "no progression"));
 
     }
 
